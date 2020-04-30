@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NovodBlog.Models;
+using System.IO;
 
 namespace NovodBlog
 {
@@ -24,13 +25,10 @@ namespace NovodBlog
         {
             string connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=WebSiteNovodBlogDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             services.AddDbContext<ArticlesDB>(options => options.UseSqlServer(connectionString));
-
+            services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory
-            services.AddSpaStaticFiles(configuration =>
-            {
-                configuration.RootPath = "ClientApp/dist";
-            });
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,16 +41,22 @@ namespace NovodBlog
             else
             {
                 app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            if (!env.IsDevelopment())
+            app.Use(async (content, next) =>
             {
-                app.UseSpaStaticFiles();
-            }
+                await next();
+                if (content.Response.StatusCode == 404 && !Path.HasExtension(content.Request.Path.Value))
+                {
+                    content.Request.Path = "/index.html";
+                    await next();
+                }
+
+            });
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseRouting();
 
@@ -63,18 +67,7 @@ namespace NovodBlog
                     pattern: "{controller}/{action=Index}/{id?}");
             });
 
-            app.UseSpa(spa =>
-            {
-                // To learn more about options for serving an Angular SPA from ASP.NET Core,
-                // see https://go.microsoft.com/fwlink/?linkid=864501
-
-                spa.Options.SourcePath = "ClientApp";
-
-                if (env.IsDevelopment())
-                {
-                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
-                }
-            });
+            app.UseMvc();
         }
     }
 }
