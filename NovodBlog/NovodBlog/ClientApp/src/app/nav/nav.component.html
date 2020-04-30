@@ -1,0 +1,39 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport 
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]   =  "(isHandset$ | async) ? 'over' : 'side'"
+      position="end">
+    <mat-toolbar >Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink = "">Home page</a>
+      <a mat-list-item routerLink = "/content">Content page</a>
+      <a mat-list-item routerLink = "/about">About</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="d-flex Toolbar" color="primary">
+        <div class=" mr-auto p-2">
+          <a routerLink= "" class="h1 Title">Novod Blog</a>
+        </div>
+        <div class="d-flex  justify-content-end p-2"  *ngIf = "!(isHandset$ | async)">
+          <ul class="list-inline align-items-center m-0 ">
+            <li class="list-inline-item "><a class="Links" routerLink = "" >Home page</a></li>
+            <li class="list-inline-item "><a class="Links" routerLink = "/content" >Content page</a></li>
+            <li class="list-inline-item "><a class="Links" routerLink= "/about" >About</a></li>
+          </ul>
+        </div>
+        <div class="ml-auto p-2">
+          <button
+            type="button"
+            aria-label="Toggle sidenav"
+            mat-icon-button
+            (click)="drawer.toggle()"
+            *ngIf="isHandset$ | async">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
+        </div>
+    </mat-toolbar>
+    <ng-content></ng-content>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

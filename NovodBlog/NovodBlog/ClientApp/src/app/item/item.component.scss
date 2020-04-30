@@ -1,0 +1,28 @@
+
+.container-fluid {
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .Blogs {
+    max-width: 1140px;
+    min-height: 85vh;
+  }
+
+  .MainBlogImage {
+    width: 100%;
+    min-height: 50vh;
+    max-height: 51vh;
+  }
+
+  .Title {
+    font-size: 2.5rem;
+    font-family: 'Courgette', cursive;
+  }
+
+  .Text {
+    font-size: 1.2rem;
+  }
+}
+

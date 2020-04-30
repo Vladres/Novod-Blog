@@ -1,0 +1,12 @@
+<ngb-carousel class = "containerSlider" [interval]="4000">
+    <ng-template ngbSlide *ngFor = "let image of images;let i = index" class="ContainerForDivs carousel-item">
+      <div class="containerForImage">
+        <img class="imageSlider" [src] = "image" alt="slide..." >
+      </div>
+      <div class="carousel-caption ">
+        <div class="d-flex justify-content-center">
+          <a href="#" class="btn btn-primary btn-lg">Get started</a>
+        </div>
+      </div>
+    </ng-template>
+</ngb-carousel>

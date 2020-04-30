@@ -1,0 +1,32 @@
+<div class="Blog d-flex-column align-self-center justify-content-center">
+  <form [formGroup]="myForm" novalidate class="p-3">
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" required class="form-control" name="" formControlName="Title" />
+
+      <div class="alert alert-danger"
+           *ngIf="myForm.controls['Title'].invalid && myForm.controls['Title'].touched">
+        Pls change TITLE before save!
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Text</label>
+      <input type="text" required class="form-control" formControlName="Text" />
+      <div class="alert alert-danger"
+           *ngIf="myForm.controls['Text'].invalid && myForm.controls['Text'].touched">
+           Pls change TEXT before save!
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Image URL</label>
+      <input type="text" required class="form-control" formControlName="imgSource" />
+      <div class="alert alert-danger"
+           *ngIf="myForm.controls['imgSource'].invalid && myForm.controls['imgSource'].touched">
+        Pls change IMGSource before save!
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <button type="button" (click)="save()" class="btn btn-success">Save</button>
+    </div>
+  </form>
+</div>
