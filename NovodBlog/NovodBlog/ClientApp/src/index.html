@@ -5,12 +5,22 @@
   <title>Novod Blog</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="https://cdn3.iconfinder.com/data/icons/ringtone-music-instruments/512/letter-n-key-keyboard-3-512.png"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</script>
+  <link rel="icon" type="image/x-icon" href="https://cdn3.iconfinder.com/data/icons/ringtone-music-instruments/512/letter-n-key-keyboard-3-512.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .spinner {
+      height: 100vh;
+    }
+  </style>
 </head>
 <body class="mat-typography">
-  <app-root></app-root>  
+  <app-root>
+    <div class="spinner d-flex justify-content-center align-items-center">
+      <div class="spinner spinner-border text-secondary " role="status"></div>
+    </div>
+  </app-root>  
 </body>
 </html>

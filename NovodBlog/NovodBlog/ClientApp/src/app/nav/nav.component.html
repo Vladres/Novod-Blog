@@ -11,24 +11,23 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar class="d-flex Toolbar" color="primary">
-        <div class=" mr-auto p-2">
-          <a routerLink= "" class="h1 Title">Novod Blog</a>
+    <mat-toolbar class="d-flex justify-content-between Toolbar" color="primary">
+        <div class="p-2">
+          <a href="#" class="h1 Title">Novod Blog</a>
         </div>
-        <div class="d-flex  justify-content-end p-2"  *ngIf = "!(isHandset$ | async)">
+        <div class="d-flex  p-2" *ngIf="!(isHandset$ | async)">
           <ul class="list-inline align-items-center m-0 ">
-            <li class="list-inline-item "><a class="Links" routerLink = "" >Home page</a></li>
-            <li class="list-inline-item "><a class="Links" routerLink = "/content" >Content page</a></li>
-            <li class="list-inline-item "><a class="Links" routerLink= "/about" >About</a></li>
+            <li class="list-inline-item "><a class="Links" routerLink="">Home page</a></li>
+            <li class="list-inline-item "><a class="Links" routerLink="/content">Content page</a></li>
+            <li class="list-inline-item "><a class="Links" routerLink="/about">About</a></li>
           </ul>
         </div>
-        <div class="ml-auto p-2">
-          <button
-            type="button"
-            aria-label="Toggle sidenav"
-            mat-icon-button
-            (click)="drawer.toggle()"
-            *ngIf="isHandset$ | async">
+        <div>
+          <button type="button"
+                  aria-label="Toggle sidenav"
+                  mat-icon-button
+                  (click)="drawer.toggle()"
+                  *ngIf="isHandset$ | async">
             <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
           </button>
         </div>
