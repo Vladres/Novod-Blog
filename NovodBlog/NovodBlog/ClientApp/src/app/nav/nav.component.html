@@ -10,19 +10,29 @@
       <a mat-list-item routerLink = "/about">About</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar class="d-flex justify-content-between Toolbar" color="primary">
-        <div class="p-2">
+  <mat-sidenav-content class="navBar ">
+    <div class="w-100 d-flex justify-content-between UpToolbar">
+      <div class="d-flex p-2">
+        <img class="imgPhone" src="https://img.icons8.com/material/480/phone--v1.png" />
+        <p>+380(93)-519-05-29</p>
+      </div>
+      <div class="d-flex p-2">
+        <a class="icons"><img class="iconUptoolbar" src="https://img.icons8.com/plasticine/2x/facebook-new.png"  /></a>
+        <a class="icons"><img class="iconUptoolbar" src="https://i.ya-webdesign.com/images/instagram-logo-transparent-background-png-5.png"/></a>
+      </div>
+     </div>
+    <mat-toolbar class="d-flex justify-content-between Toolbar p-2 " >
+        <div class="">
           <a href="#" class="h1 Title">Novod Blog</a>
         </div>
-        <div class="d-flex  p-2" *ngIf="!(isHandset$ | async)">
+        <div class="d-flex  p-2" *ngIf="!(isHandset$ | async); else MenuForMobile">
           <ul class="list-inline align-items-center m-0 ">
             <li class="list-inline-item "><a class="Links" routerLink="">Home page</a></li>
             <li class="list-inline-item "><a class="Links" routerLink="/content">Content page</a></li>
             <li class="list-inline-item "><a class="Links" routerLink="/about">About</a></li>
           </ul>
         </div>
-        <div>
+        <ng-template #MenuForMobile>
           <button type="button"
                   aria-label="Toggle sidenav"
                   mat-icon-button
@@ -30,7 +40,7 @@
                   *ngIf="isHandset$ | async">
             <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
           </button>
-        </div>
+        </ng-template>
     </mat-toolbar>
     <ng-content></ng-content>
     <app-footer></app-footer>

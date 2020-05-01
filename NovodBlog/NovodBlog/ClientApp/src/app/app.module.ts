@@ -27,6 +27,7 @@ import { ItemComponent } from './item/item.component';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatListModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: "AIzaSyAHiydBjdhPXBiEZ5QW_Hgx4aXvedHJYnE"
+    })
   ],
   providers: [ImagesService,ArticleService],
   bootstrap: [AppComponent]
