@@ -10,18 +10,21 @@
       <a mat-list-item routerLink = "/about">About</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content class="navBar ">
+  <mat-sidenav-content class="UpNavBar ">
     <div class="w-100 d-flex justify-content-between UpToolbar">
-      <div class="d-flex p-2">
+      <div class="d-flex align-items-center">
         <img class="imgPhone" src="https://img.icons8.com/material/480/phone--v1.png" />
-        <p>+380(93)-519-05-29</p>
+        <span m-0>+380(93)-519-05-29</span>
       </div>
       <div class="d-flex p-2">
-        <a class="icons"><img class="iconUptoolbar" src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Black-Logo.wine.svg"  /></a>
-        <a class="icons"><img class="iconUptoolbar" src="https://i.ya-webdesign.com/images/instagram-logo-transparent-background-png-5.png"/></a>
+        <ul class="p-1 list-inline" >
+          <li class="list-inline-item"><a class="icons"><img class="iconUptoolbar" src="https://cdn.onlinewebfonts.com/svg/img_80278.png" /></a></li>
+          <li class="list-inline-item"><a class="icons"><img class="iconUptoolbar" src="https://kiwiflowershop.com.ua/twitter.svg" /></a></li>
+        </ul>
       </div>
      </div>
-    <mat-toolbar class="d-flex justify-content-between Toolbar p-2 " >
+    <mat-toolbar class="border border-dark  w-100 p-3 Navbar border-right-0 border-left-0" >
+      <div class="d-flex justify-content-between Toolbar w-100">
         <div class="">
           <a href="#" class="h1 Title">Novod Blog</a>
         </div>
@@ -41,6 +44,7 @@
             <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
           </button>
         </ng-template>
+      </div>
     </mat-toolbar>
     <ng-content></ng-content>
     <app-footer></app-footer>

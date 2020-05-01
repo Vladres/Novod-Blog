@@ -6,6 +6,7 @@ import { ArticleService, Article } from '../Services/Articles/article.service';
   templateUrl: './content-page.component.html',
   styleUrls: ['./content-page.component.scss']
 })
+
 export class ContentPageComponent implements OnInit {
 
   public articles : Article [];

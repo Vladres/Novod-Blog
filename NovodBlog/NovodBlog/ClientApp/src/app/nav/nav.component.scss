@@ -23,20 +23,22 @@
     }
   }
 }
-.navBar {
+
+.Navbar {
+  background-color: #e0e0e0;
+}
+
+.UpNavBar {
   background-color: #e0e0e0;
 }
 .Toolbar {
-  margin: 0 auto;
-  height: 10vh;
+  margin:0 auto;
   max-width: 1140px;
-  background-color: #e0e0e0;
 }
 
 a{
   text-decoration: none;
 }
-
 
 .Title{
   color :#000;
@@ -48,7 +50,6 @@ li {
     font-size: 1.5rem;
     font-family: 'Lobster', cursive;
   }
-
   :hover {
     color: #006b99;
   }

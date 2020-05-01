@@ -10,7 +10,8 @@ namespace NovodBlog.Models
     public class Article
     {
         public int id { get; set; }
-        public string Title { get; set; }    
+        public string Title { get; set; }
+        public string subText { get; set; }
         public string Text { get; set; } 
         public string imgSource { get; set; }
     }

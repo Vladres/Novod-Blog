@@ -59,7 +59,7 @@ import { AgmCoreModule } from '@agm/core';
     ReactiveFormsModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: "AIzaSyA0rB7V0wQ3oPJiTYvRo8nw3tQRcxqA6bs"
+      apiKey: "AIzaSyCi7at-HYpoSnHTFBFNb6tfZ_8N0-moFbY"
     })
   ],
   providers: [ImagesService,ArticleService],

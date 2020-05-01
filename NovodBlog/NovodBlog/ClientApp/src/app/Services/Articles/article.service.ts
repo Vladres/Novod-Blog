@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ArticleService {
 
   private url = "/api/Articles";
@@ -32,6 +33,7 @@ export class Article{
   constructor(
     id: number,
     title: string,
+    subText: string,
     text: string,
     imgSource: string) { }
 }

@@ -8,7 +8,7 @@ import { ArticleService, Article } from '../Services/Articles/article.service';
 })
 export class BlogsComponent implements OnInit {
 
-  public articles : Article[];
+  public articles: Article[] ;
   
   constructor(private articleService : ArticleService) { }
 
