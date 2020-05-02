@@ -8,8 +8,6 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
   styleUrls: ['./admin-panel.component.scss']
 })
 export class AdminPanelComponent implements OnInit {
-
-
   public myForm: FormGroup;
   done: boolean = false;
 

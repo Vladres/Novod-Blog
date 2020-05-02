@@ -19,7 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from "./about/about.component";
 import { HomeComponent } from './home/home.component';
 import { ArticleService } from './Services/Articles/article.service';
 import { ContentPageComponent } from './content-page/content-page.component';
@@ -28,6 +28,8 @@ import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
+import { AdminSignInComponent } from './admin-sign-in/admin-sign-in.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import { AgmCoreModule } from '@agm/core';
     ContentPageComponent,
     ItemComponent,
     AdminPanelComponent,
+    AdminSignInComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,7 @@ import { AgmCoreModule } from '@agm/core';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    MatInputModule,
     MatListModule,
     ReactiveFormsModule,
     HttpClientModule,
