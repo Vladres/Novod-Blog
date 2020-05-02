@@ -177,7 +177,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       function ImagesService() {
         _classCallCheck(this, ImagesService);
 
-        this.images = ["https://i.pinimg.com/originals/0e/9e/88/0e9e8812f01f82650833264673bf51ed.jpg", "https://wallpapercave.com/wp/wp2394184.jpg", "https://cutewallpaper.org/21/ultra-hd-wallpapers-4k/Cars-3-2017-4K-8K-Wallpapers-HD-Wallpapers-ID-19843.jpg"];
+        this.images = ["https://i.pinimg.com/originals/0e/9e/88/0e9e8812f01f82650833264673bf51ed.jpg", "https://wallpapercave.com/wp/wp2394184.jpg", "https://images.wallpaperscraft.ru/image/sportkar_avtomobil_doroga_168267_3840x2160.jpg"];
       }
 
       _createClass(ImagesService, [{
@@ -621,7 +621,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-admin-sign-in"]],
       decls: 16,
       vars: 1,
-      consts: [[1, "Blog", "d-flex", "align-items-center", "justify-content-center"], [1, "login", "shadow", "p-3", "mb-5", "bg-white", "rounded"], [1, "login-triangle"], [1, "login-header"], ["novalidate", "", 1, "example-form", 3, "formGroup"], [1, "example-full-width"], ["matInput", "", "placeholder", "Login", "name", "login", "formControlName", "login", 1, "form-control"], ["matInput", "", "placeholder", "Password", "type", "password", "name", "password", "formControlName", "password", 1, "form-control"], [1, "LoginBtn"]],
+      consts: [[1, "Blog", "d-flex", "align-items-center", "justify-content-center"], [1, "login", "shadow", "p-3", "mb-5", "bg-white", "rounded"], [1, "login-triangle"], [1, "login-header"], ["novalidate", "", 1, "example-form", 3, "formGroup"], [1, "example-full-width"], ["matInput", "", "name", "login", "formControlName", "login", 1, "form-control"], ["matInput", "", "type", "password", "name", "password", "formControlName", "password", 1, "form-control"], [1, "LoginBtn"]],
       template: function AdminSignInComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -2314,7 +2314,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 6);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h1", 7);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Welcome To Novod Blog");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -2330,7 +2338,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function SliderComponent_1_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, SliderComponent_1_ng_template_0_Template, 4, 1, "ng-template", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, SliderComponent_1_ng_template_0_Template, 6, 1, "ng-template", 2);
       }
     }
 
@@ -2366,7 +2374,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-slider"]],
       decls: 2,
       vars: 2,
-      consts: [[1, "containerSlider", 3, "interval"], [4, "ngFor", "ngForOf"], ["ngbSlide", "", "class", "ContainerForDivs carousel-item"], [1, "containerForImage"], ["alt", "slide...", 1, "imageSlider", 3, "src"], [1, "carousel-caption"], [1, "d-flex", "justify-content-center"]],
+      consts: [[1, "containerSlider", 3, "interval"], [4, "ngFor", "ngForOf"], ["ngbSlide", "", "class", "ContainerForDivs carousel-item"], [1, "containerForImage"], ["alt", "slide...", 1, "imageSlider", 3, "src"], [1, "carousel-caption", "d-flex", "flex-column", "align-items-center", "justify", "justify-content-start", "p-3"], [1, "text-center"], [1, "Title", "m-2"]],
       template: function SliderComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ngb-carousel", 0);
@@ -2385,7 +2393,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }
       },
       directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NgbCarousel"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NgbSlide"]],
-      styles: [".containerSlider[_ngcontent-%COMP%] {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n}\n.containerSlider[_ngcontent-%COMP%]   .imageSlider[_ngcontent-%COMP%] {\n  width: 100%;\n  max-height: 85vh;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2xpZGVyL0M6XFxVc2Vyc1xcVmxhZGlzbGF2XFxzb3VyY2VcXFdlYlNpdGVcXFdlYlNpdGVcXE5vdm9kQmxvZ1xcTm92b2RCbG9nXFxDbGllbnRBcHAvc3JjXFxhcHBcXHNsaWRlclxcc2xpZGVyLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9zbGlkZXIvc2xpZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBQTtFQUNBLFVBQUE7RUFDQSxXQUFBO0FDQ0Y7QURDRTtFQUNFLFdBQUE7RUFDQSxnQkFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvc2xpZGVyL3NsaWRlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXJTbGlkZXIge1xuICBtYXJnaW46IDA7XG4gIHBhZGRpbmc6IDA7XG4gIHdpZHRoOiAxMDAlO1xuXG4gIC5pbWFnZVNsaWRlciB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWF4LWhlaWdodDogODV2aDtcbiAgfVxuXG59XG4iLCIuY29udGFpbmVyU2xpZGVyIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xuICB3aWR0aDogMTAwJTtcbn1cbi5jb250YWluZXJTbGlkZXIgLmltYWdlU2xpZGVyIHtcbiAgd2lkdGg6IDEwMCU7XG4gIG1heC1oZWlnaHQ6IDg1dmg7XG59Il19 */"]
+      styles: [".containerSlider[_ngcontent-%COMP%] {\n  margin: 0;\n  padding: 0;\n}\n.containerSlider[_ngcontent-%COMP%]   .imageSlider[_ngcontent-%COMP%] {\n  width: 100%;\n  max-height: 85vh;\n}\n.carousel-caption[_ngcontent-%COMP%] {\n  height: 80%;\n}\n.carousel-caption[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%] {\n  color: black;\n}\n.carousel-caption[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%], .carousel-caption[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  font-family: \"Lobster\", cursive;\n  text-shadow: 2px 2px #00a326;\n}\n.Title[_ngcontent-%COMP%] {\n  font-size: 4rem;\n}\n.MainButtonDiv[_ngcontent-%COMP%] {\n  height: 2vh;\n}\n@media (max-width: 566px) {\n  .Title[_ngcontent-%COMP%] {\n    font-size: 1.5rem;\n  }\n}\n@media (max-width: 1024px) {\n  .Title[_ngcontent-%COMP%] {\n    font-size: 2rem;\n  }\n}\n@media (min-width: 1024px) {\n  .Title[_ngcontent-%COMP%] {\n    font-size: 3rem;\n  }\n}\n@media (min-width: 2048px) {\n  .Title[_ngcontent-%COMP%] {\n    font-size: 4rem;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2xpZGVyL0M6XFxVc2Vyc1xcVmxhZGlzbGF2XFxzb3VyY2VcXFdlYlNpdGVcXFdlYlNpdGVcXE5vdm9kQmxvZ1xcTm92b2RCbG9nXFxDbGllbnRBcHAvc3JjXFxhcHBcXHNsaWRlclxcc2xpZGVyLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9zbGlkZXIvc2xpZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBQTtFQUNBLFVBQUE7QUNDRjtBRENFO0VBQ0UsV0FBQTtFQUNBLGdCQUFBO0FDQ0o7QURHQTtFQUNJLFdBQUE7QUNBSjtBREVBO0VBQ0UsWUFBQTtBQ0NGO0FEQ0U7RUFDRSwrQkFBQTtFQUNBLDRCQUFBO0FDQ0o7QURJQTtFQUNFLGVBQUE7QUNERjtBRElBO0VBQ0ksV0FBQTtBQ0RKO0FER0E7RUFDRTtJQUNFLGlCQUFBO0VDQUY7QUFDRjtBREdBO0VBQ0U7SUFDRSxlQUFBO0VDREY7QUFDRjtBREtBO0VBQ0U7SUFDRSxlQUFBO0VDSEY7QUFDRjtBRE1BO0VBQ0U7SUFDRSxlQUFBO0VDSkY7QUFDRiIsImZpbGUiOiJzcmMvYXBwL3NsaWRlci9zbGlkZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyU2xpZGVyIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xuXG4gIC5pbWFnZVNsaWRlciB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWF4LWhlaWdodDogODV2aDtcbiAgfVxuXG59XG4uY2Fyb3VzZWwtY2FwdGlvbntcclxuICAgIGhlaWdodDo4MCU7XHJcbn1cbi5jYXJvdXNlbC1jYXB0aW9uID4gZGl2IHtcbiAgY29sb3I6IGJsYWNrO1xuXG4gIGgxLCBoMiB7XG4gICAgZm9udC1mYW1pbHk6ICdMb2JzdGVyJywgY3Vyc2l2ZTtcbiAgICB0ZXh0LXNoYWRvdzogMnB4IDJweCAjMDBhMzI2O1xuICB9XG59XG5cblxuLlRpdGxlIHtcbiAgZm9udC1zaXplOiA0cmVtO1xufVxuXG4uTWFpbkJ1dHRvbkRpdntcclxuICAgIGhlaWdodDoydmg7XHJcbn1cbkBtZWRpYSAobWF4LXdpZHRoOjU2NnB4KSB7XG4gIC5UaXRsZSB7XG4gICAgZm9udC1zaXplOiAxLjVyZW07XG4gIH1cbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6MTAyNHB4KSB7XG4gIC5UaXRsZSB7XG4gICAgZm9udC1zaXplOiAycmVtO1xuICB9XG59XG5cblxuQG1lZGlhIChtaW4td2lkdGg6MTAyNHB4KSB7XG4gIC5UaXRsZSB7XG4gICAgZm9udC1zaXplOiAzcmVtO1xuICB9XG59XG5cbkBtZWRpYSAobWluLXdpZHRoOjIwNDhweCkge1xuICAuVGl0bGUge1xuICAgIGZvbnQtc2l6ZTogNHJlbTtcbiAgfVxufVxuIiwiLmNvbnRhaW5lclNsaWRlciB7XG4gIG1hcmdpbjogMDtcbiAgcGFkZGluZzogMDtcbn1cbi5jb250YWluZXJTbGlkZXIgLmltYWdlU2xpZGVyIHtcbiAgd2lkdGg6IDEwMCU7XG4gIG1heC1oZWlnaHQ6IDg1dmg7XG59XG5cbi5jYXJvdXNlbC1jYXB0aW9uIHtcbiAgaGVpZ2h0OiA4MCU7XG59XG5cbi5jYXJvdXNlbC1jYXB0aW9uID4gZGl2IHtcbiAgY29sb3I6IGJsYWNrO1xufVxuLmNhcm91c2VsLWNhcHRpb24gPiBkaXYgaDEsIC5jYXJvdXNlbC1jYXB0aW9uID4gZGl2IGgyIHtcbiAgZm9udC1mYW1pbHk6IFwiTG9ic3RlclwiLCBjdXJzaXZlO1xuICB0ZXh0LXNoYWRvdzogMnB4IDJweCAjMDBhMzI2O1xufVxuXG4uVGl0bGUge1xuICBmb250LXNpemU6IDRyZW07XG59XG5cbi5NYWluQnV0dG9uRGl2IHtcbiAgaGVpZ2h0OiAydmg7XG59XG5cbkBtZWRpYSAobWF4LXdpZHRoOiA1NjZweCkge1xuICAuVGl0bGUge1xuICAgIGZvbnQtc2l6ZTogMS41cmVtO1xuICB9XG59XG5AbWVkaWEgKG1heC13aWR0aDogMTAyNHB4KSB7XG4gIC5UaXRsZSB7XG4gICAgZm9udC1zaXplOiAycmVtO1xuICB9XG59XG5AbWVkaWEgKG1pbi13aWR0aDogMTAyNHB4KSB7XG4gIC5UaXRsZSB7XG4gICAgZm9udC1zaXplOiAzcmVtO1xuICB9XG59XG5AbWVkaWEgKG1pbi13aWR0aDogMjA0OHB4KSB7XG4gIC5UaXRsZSB7XG4gICAgZm9udC1zaXplOiA0cmVtO1xuICB9XG59Il19 */"]
     });
     /*@__PURE__*/
 
