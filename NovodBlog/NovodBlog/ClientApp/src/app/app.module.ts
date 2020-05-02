@@ -30,6 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
 import { AdminSignInComponent } from './admin-sign-in/admin-sign-in.component';
 import { MatInputModule } from '@angular/material/input';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AuthService } from './Services/Auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -64,9 +67,10 @@ import { MatInputModule } from '@angular/material/input';
     HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: "AIzaSyCi7at-HYpoSnHTFBFNb6tfZ_8N0-moFbY"
-    })
+    }),
+    AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [ImagesService,ArticleService],
+  providers: [ImagesService, ArticleService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
