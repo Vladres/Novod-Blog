@@ -24,7 +24,7 @@ namespace NovodBlog
         public void ConfigureServices(IServiceCollection services)
         {
             string connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=WebSiteNovodBlogDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-            services.AddDbContext<ArticlesDB>(options => options.UseSqlServer(connectionString));
+            services.AddDbContext<DB>(options => options.UseSqlServer(connectionString));
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory

@@ -1,6 +1,12 @@
-<div class="Blog d-flex-column align-self-center justify-content-center">
-  <form [formGroup]="myForm" novalidate class="p-3">
+<div class="Blog  d-flex flex-column align-items-center  justify-content-center">
+  <form [formGroup]="myForm" novalidate class=" p-3 shadow  bg-white rounded">
     <div class="form-group">
+      <div class="alert alert-success" role="alert" *ngIf="done">
+        Успішно
+      </div>
+      <div class="alert alert-danger" role="alert" *ngIf="serverError">
+        {{serverError}}
+      </div>
       <label>Title</label>
       <input type="text" required class="form-control" name="" formControlName="Title" />
 
@@ -11,10 +17,18 @@
     </div>
     <div class="form-group">
       <label>Text</label>
-      <textarea type="text" required class="form-control" formControlName="Text" ></textarea>
+      <textarea type="text" required class="form-control" formControlName="Text"></textarea>
       <div class="alert alert-danger"
            *ngIf="myForm.controls['Text'].invalid && myForm.controls['Text'].touched">
-           Pls change TEXT before save!
+        Pls change TEXT before save!
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Sub title</label>
+      <textarea type="text" required class="form-control" formControlName="subTitle"></textarea>
+      <div class="alert alert-danger"
+           *ngIf="myForm.controls['subTitle'].invalid && myForm.controls['subTitle'].touched">
+        Pls change subTitle before save!
       </div>
     </div>
     <div class="form-group">
@@ -30,3 +44,5 @@
     </div>
   </form>
 </div>
+
+<button type="button" (click)="signOut()" class="btn btn-success">Log out</button>

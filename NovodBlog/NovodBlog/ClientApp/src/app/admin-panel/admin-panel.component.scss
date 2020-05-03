@@ -1,5 +1,8 @@
 .Blog{
-    height: 65vh;
+    min-height: 70vh;
     margin: auto;
     max-width:1140px;
+    form{
+        min-width: 50%;
+    }
 }

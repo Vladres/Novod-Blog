@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NovodBlog.Models;
+using NovodBlog.Services;
 
 namespace NovodBlog.Controllers
 {
@@ -13,11 +14,12 @@ namespace NovodBlog.Controllers
     public class ArticlesController : ControllerBase
     {
 
-        Models.ArticlesDB db;
+        Models.DB db;
 
-        public ArticlesController(ArticlesDB context)
+        public ArticlesController(DB context)
         {
             db = context;
+            
         }
 
         // GET: api/Articles
@@ -37,12 +39,13 @@ namespace NovodBlog.Controllers
 
         // POST: api/Articles
         [HttpPost]
-        public IActionResult Post([FromBody] Article value)
+        public async Task<IActionResult> Post([FromBody] Article value)
         {
             if (ModelState.IsValid)
             {
                 db.Articles.Add(value);
                 db.SaveChanges();
+                await SendMessage();
                 return Ok(value);
             }
             return BadRequest(ModelState);
@@ -72,6 +75,19 @@ namespace NovodBlog.Controllers
                 db.SaveChanges();
             }
             return Ok(product);
+        }
+
+
+        public async Task<IActionResult> SendMessage()
+        {
+            EmailService emailService = new EmailService();
+            List<Subscribers> emailList = db.Subscribers.ToList();
+            foreach (Subscribers tmp in emailList)
+            {
+                await emailService.SendEmailAsync(tmp.email , "Тема письма", tmp.name_of_subscriber + "Зайди на сайт там новинки");
+
+            }
+            return RedirectToAction("Index");
         }
     }
 }

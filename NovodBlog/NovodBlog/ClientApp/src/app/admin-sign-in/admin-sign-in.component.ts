@@ -22,16 +22,12 @@ export class AdminSignInComponent implements OnInit {
     });
   }
   ngOnInit(): void {
-    if (this.authService.user$) {
-      this.router.navigate(['adminPanel/AddingPanel']);
-    }
   }
 
   public async login() {
     await this.authService.login(this.myForm.value.login, this.myForm.value.password)
       .then(response => {
-        this.authService.user$ = of(true);
-        this.router.navigate(['adminPanel/AddingPanel']);
+        return this.router.navigate(['adminPanel/AddingPanel']);
       })
       .catch(er => {
         console.log(er);

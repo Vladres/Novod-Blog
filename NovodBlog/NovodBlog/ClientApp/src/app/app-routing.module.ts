@@ -6,7 +6,8 @@ import { ContentPageComponent } from './content-page/content-page.component';
 import { ItemComponent } from './item/item.component';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { AdminSignInComponent } from "./admin-sign-in/admin-sign-in.component";
-import { AdminGuard } from './Guards/admin.guard';
+import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
+
 
 const routes: Routes = [
   { path : '' , component : HomeComponent },
@@ -14,7 +15,7 @@ const routes: Routes = [
   { path : 'content', component : ContentPageComponent  },
   { path: "content/item/:id", component: ItemComponent },
   { path: 'adminPanel', component: AdminSignInComponent },
-  { path: 'adminPanel/AddingPanel', component: AdminPanelComponent, canActivate : [AdminGuard] },
+  { path: 'adminPanel/AddingPanel', component: AdminPanelComponent, canActivate: [AngularFireAuthGuard] },
   { path: '**', redirectTo: '/', pathMatch : "full"}
 ];
 
