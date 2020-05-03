@@ -197,14 +197,18 @@ class AboutComponent {
     }
 }
 AboutComponent.ɵfac = function AboutComponent_Factory(t) { return new (t || AboutComponent)(); };
-AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutComponent, selectors: [["app-about"]], decls: 2, vars: 2, consts: [[1, "Blog"], [3, "latitude", "longitude"]], template: function AboutComponent_Template(rf, ctx) { if (rf & 1) {
+AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutComponent, selectors: [["app-about"]], decls: 3, vars: 4, consts: [[1, "Blog"], [3, "latitude", "longitude"]], template: function AboutComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "agm-map", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "agm-map", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "agm-marker", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("latitude", ctx.latitude)("longitude", ctx.longitude);
-    } }, directives: [_agm_core__WEBPACK_IMPORTED_MODULE_1__["AgmMap"]], styles: [".Blog[_ngcontent-%COMP%] {\n  min-height: 72vh;\n}\n.Blog[_ngcontent-%COMP%]   agm-map[_ngcontent-%COMP%] {\n  height: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWJvdXQvQzpcXFVzZXJzXFxWbGFkaXNsYXZcXHNvdXJjZVxcV2ViU2l0ZVxcV2ViU2l0ZVxcTm92b2RCbG9nXFxOb3ZvZEJsb2dcXENsaWVudEFwcC9zcmNcXGFwcFxcYWJvdXRcXGFib3V0LmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hYm91dC9hYm91dC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGdCQUFBO0FDQ0o7QURBSTtFQUNJLFlBQUE7QUNFUiIsImZpbGUiOiJzcmMvYXBwL2Fib3V0L2Fib3V0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLkJsb2d7XG4gICAgbWluLWhlaWdodDogNzJ2aDtcbiAgICBhZ20tbWFwe1xyXG4gICAgICAgIGhlaWdodDoxMDAlO1xyXG4gICAgfVxufVxuIiwiLkJsb2cge1xuICBtaW4taGVpZ2h0OiA3MnZoO1xufVxuLkJsb2cgYWdtLW1hcCB7XG4gIGhlaWdodDogMTAwJTtcbn0iXX0= */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("latitude", ctx.latitude)("longitude", ctx.longitude);
+    } }, directives: [_agm_core__WEBPACK_IMPORTED_MODULE_1__["AgmMap"], _agm_core__WEBPACK_IMPORTED_MODULE_1__["AgmMarker"]], styles: [".Blog[_ngcontent-%COMP%] {\n  min-height: 72vh;\n}\n.Blog[_ngcontent-%COMP%]   agm-map[_ngcontent-%COMP%] {\n  height: 72vh;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWJvdXQvQzpcXFVzZXJzXFxWbGFkaXNsYXZcXHNvdXJjZVxcV2ViU2l0ZVxcV2ViU2l0ZVxcTm92b2RCbG9nXFxOb3ZvZEJsb2dcXENsaWVudEFwcC9zcmNcXGFwcFxcYWJvdXRcXGFib3V0LmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hYm91dC9hYm91dC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFBO0FDQ0Y7QURDRTtFQUNFLFlBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2Fib3V0L2Fib3V0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLkJsb2cge1xuICBtaW4taGVpZ2h0OiA3MnZoO1xuXG4gIGFnbS1tYXAge1xuICAgIGhlaWdodDogNzJ2aDtcbiAgfVxufVxuIiwiLkJsb2cge1xuICBtaW4taGVpZ2h0OiA3MnZoO1xufVxuLkJsb2cgYWdtLW1hcCB7XG4gIGhlaWdodDogNzJ2aDtcbn0iXX0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AboutComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -685,7 +689,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
             _angular_forms__WEBPACK_IMPORTED_MODULE_10__["ReactiveFormsModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_26__["HttpClientModule"],
             _agm_core__WEBPACK_IMPORTED_MODULE_27__["AgmCoreModule"].forRoot({
-                apiKey: "AIzaSyCi7at-HYpoSnHTFBFNb6tfZ_8N0-moFbY"
+                apiKey: "AIzaSyBnhupVdK_Taq6alpihcms3mQAVYMTBNbE"
             }),
             _angular_fire__WEBPACK_IMPORTED_MODULE_30__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_31__["environment"].firebase)
         ]] });
@@ -749,7 +753,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _angular_forms__WEBPACK_IMPORTED_MODULE_10__["ReactiveFormsModule"],
                     _angular_common_http__WEBPACK_IMPORTED_MODULE_26__["HttpClientModule"],
                     _agm_core__WEBPACK_IMPORTED_MODULE_27__["AgmCoreModule"].forRoot({
-                        apiKey: "AIzaSyCi7at-HYpoSnHTFBFNb6tfZ_8N0-moFbY"
+                        apiKey: "AIzaSyBnhupVdK_Taq6alpihcms3mQAVYMTBNbE"
                     }),
                     _angular_fire__WEBPACK_IMPORTED_MODULE_30__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_31__["environment"].firebase)
                 ],

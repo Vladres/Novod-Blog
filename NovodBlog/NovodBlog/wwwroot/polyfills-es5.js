@@ -1072,7 +1072,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   /***/
   function node_modulesAngularLocalizeFesm2015InitJs(module, exports) {
     /**
-     * @license Angular v9.1.3
+     * @license Angular v9.1.4
      * (c) 2010-2020 Google LLC. https://angular.io/
      * License: MIT
      */

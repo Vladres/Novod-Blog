@@ -66,7 +66,7 @@ import { AuthService } from './Services/Auth/auth.service';
     ReactiveFormsModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: "AIzaSyCi7at-HYpoSnHTFBFNb6tfZ_8N0-moFbY"
+      apiKey: "AIzaSyBnhupVdK_Taq6alpihcms3mQAVYMTBNbE" 
     }),
     AngularFireModule.initializeApp(environment.firebase)
   ],
