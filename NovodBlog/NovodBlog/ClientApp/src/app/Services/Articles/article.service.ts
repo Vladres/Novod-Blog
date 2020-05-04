@@ -25,7 +25,11 @@ export class ArticleService {
   }
 
   updateArticle(value: Article) {
-    this.http.put(this.url, value);
+    return this.http.put(this.url, value);
+  }
+
+  deleteArticle(id: number): Observable<any> {
+    return this.http.delete(this.url + "/" + id);
   }
 }
 

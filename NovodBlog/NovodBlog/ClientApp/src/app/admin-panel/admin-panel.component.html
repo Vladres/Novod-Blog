@@ -7,9 +7,11 @@
       <div class="alert alert-danger" role="alert" *ngIf="serverError">
         {{serverError}}
       </div>
+      <div>
+        <h1>Add article</h1>
+      </div>
       <label>Title</label>
       <input type="text" required class="form-control" name="" formControlName="Title" />
-
       <div class="alert alert-danger"
            *ngIf="myForm.controls['Title'].invalid && myForm.controls['Title'].touched">
         Pls change TITLE before save!
@@ -25,9 +27,9 @@
     </div>
     <div class="form-group">
       <label>Sub title</label>
-      <textarea type="text" required class="form-control" formControlName="subTitle"></textarea>
+      <textarea type="text" required class="form-control" formControlName="subText"></textarea>
       <div class="alert alert-danger"
-           *ngIf="myForm.controls['subTitle'].invalid && myForm.controls['subTitle'].touched">
+           *ngIf="myForm.controls['subText'].invalid && myForm.controls['subText'].touched">
         Pls change subTitle before save!
       </div>
     </div>
@@ -43,6 +45,17 @@
       <button type="button" (click)="save()" class="btn btn-success">Save</button>
     </div>
   </form>
+  <div class="d-flex flex-wrap justify-content-center p-1 m-1 ">
+    <div class="Blogs col-md-12 card m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let article of articles">
+      <a [routerLink]="['content/item' , article.id ]">
+        <div>
+          <img class="MainBlogImage" src="{{article.imgSource}}" alt="">
+          <p class="h3 Title">{{article.title}}</p><br />
+          <p>{{article.subText}}</p>
+          <button type="button" (click)="delete(article.id)" class="btn btn-danger">Delete</button>
+        </div>
+      </a>
+    </div>
+  </div>    
 </div>
 
-<button type="button" (click)="signOut()" class="btn btn-success">Log out</button>

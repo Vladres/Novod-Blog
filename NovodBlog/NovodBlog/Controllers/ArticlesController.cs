@@ -14,12 +14,11 @@ namespace NovodBlog.Controllers
     public class ArticlesController : ControllerBase
     {
 
-        Models.DB db;
+        DB db;
 
         public ArticlesController(DB context)
         {
             db = context;
-            
         }
 
         // GET: api/Articles
@@ -39,13 +38,12 @@ namespace NovodBlog.Controllers
 
         // POST: api/Articles
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Article value)
+        public  IActionResult Post([FromBody] Article value)
         {
             if (ModelState.IsValid)
             {
                 db.Articles.Add(value);
                 db.SaveChanges();
-                await SendMessage();
                 return Ok(value);
             }
             return BadRequest(ModelState);
@@ -84,8 +82,7 @@ namespace NovodBlog.Controllers
             List<Subscribers> emailList = db.Subscribers.ToList();
             foreach (Subscribers tmp in emailList)
             {
-                await emailService.SendEmailAsync(tmp.email , "Тема письма", tmp.name_of_subscriber + "Зайди на сайт там новинки");
-
+                await emailService.SendEmailAsync(tmp.email , "Novod blog News", $"<div>{tmp.name_of_subscriber}<br>Зайди на сайт там новинки<div>").ConfigureAwait(true);
             }
             return RedirectToAction("Index");
         }
