@@ -1,4 +1,5 @@
-<div class="Blog  d-flex flex-column align-items-center  justify-content-center">
+<div class="Blog  d-flex flex-column align-items-center  justify-content-between">
+  
   <form [formGroup]="myForm" novalidate class=" p-3 shadow  bg-white rounded">
     <div class="form-group">
       <div class="alert alert-success" role="alert" *ngIf="done">
@@ -45,17 +46,15 @@
       <button type="button" (click)="save()" class="btn btn-success">Save</button>
     </div>
   </form>
-  <div class="d-flex flex-wrap justify-content-center p-1 m-1 ">
-    <div class="Blogs col-md-12 card m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let article of articles">
-      <a [routerLink]="['content/item' , article.id ]">
-        <div>
-          <img class="MainBlogImage" src="{{article.imgSource}}" alt="">
-          <p class="h3 Title">{{article.title}}</p><br />
-          <p>{{article.subText}}</p>
-          <button type="button" (click)="delete(article.id)" class="btn btn-danger">Delete</button>
-        </div>
-      </a>
+  <div class="Blogs d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let article of articles">
+    <div>
+      <img class="MainBlogImage" src="{{article.imgSource}}" alt="">
     </div>
-  </div>    
+    <div>
+      <p class="h3 Title">{{article.title}}</p><br />
+      <p>{{article.subText}}</p>
+      <button type="button" (click)="delete(article.id)" class="btn btn-danger">Delete</button>
+    </div>
+  </div> 
 </div>
 

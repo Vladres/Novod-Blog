@@ -1,5 +1,5 @@
-<div class="container-fluid m-0 p-1">
-  <div class="d-flex flex-wrap justify-content-center p-1 m-1 ">
+<div class="container-fluid m-0">
+  <div class="d-flex flex-wrap justify-content-center align-items-center ">
     <div class="Blogs col-md-12 card m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let article of articles | slice : 0 : 6">
       <a [routerLink]="['content/item' , article.id ]">
         <div>

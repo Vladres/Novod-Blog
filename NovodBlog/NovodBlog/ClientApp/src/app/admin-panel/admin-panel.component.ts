@@ -16,7 +16,7 @@ export class AdminPanelComponent implements OnInit {
   public serverError: string;
   public articles: Article[];
 
-  constructor(private articleService: ArticleService, private authService: AuthService, private formBuilder: FormBuilder, private router: Router) { }
+  constructor(private articleService: ArticleService, private authService: AuthService, private formBuilder: FormBuilder) { }
 
   
 
@@ -44,10 +44,7 @@ export class AdminPanelComponent implements OnInit {
       error => { console.log(error); this.serverError = error.message; this.done = false; });
   }
 
-  signOut() {
-    this.authService.signOut();
-    this.router.navigate(['adminPanel']);
-  }
+ 
 
   delete(id: number) {
     this.articleService.deleteArticle(id).subscribe(data => this.loadArticle(),
