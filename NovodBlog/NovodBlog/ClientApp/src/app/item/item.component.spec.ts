@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ItemComponent } from './item.component';
+import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { BrowserModule } from '@angular/platform-browser';
 
 describe('ItemComponent', () => {
   let component: ItemComponent;
@@ -8,6 +12,12 @@ describe('ItemComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [RouterTestingModule,
+        BrowserModule,
+        HttpClientModule,
+        HttpClientTestingModule
+      ],
+      providers: [],
       declarations: [ ItemComponent ]
     })
     .compileComponents();

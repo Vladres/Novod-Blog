@@ -8,6 +8,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { NavComponent } from './nav.component';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../../environments/environment';
+
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('NavComponent', () => {
   let component: NavComponent;
@@ -24,6 +29,9 @@ describe('NavComponent', () => {
         MatListModule,
         MatSidenavModule,
         MatToolbarModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireDatabaseModule,
+        RouterTestingModule
       ]
     }).compileComponents();
   }));

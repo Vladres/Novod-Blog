@@ -70,7 +70,7 @@ import { AuthService } from './Services/Auth/auth.service';
     }),
     AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [ImagesService, ArticleService, AuthService],
+  providers: [ImagesService, ArticleService, AuthService, ReactiveFormsModule, FormsModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
