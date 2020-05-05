@@ -13,9 +13,7 @@ namespace NovodBlog.Controllers
     [ApiController]
     public class ArticlesController : ControllerBase
     {
-
         DB db;
-
         public ArticlesController(DB context)
         {
             db = context;
@@ -38,10 +36,11 @@ namespace NovodBlog.Controllers
 
         // POST: api/Articles
         [HttpPost]
-        public  IActionResult Post([FromBody] Article value)
+        public async Task<IActionResult> Post([FromBody] Article value)
         {
             if (ModelState.IsValid)
             {
+                await SendMessages();
                 db.Articles.Add(value);
                 db.SaveChanges();
                 return Ok(value);
@@ -62,7 +61,7 @@ namespace NovodBlog.Controllers
             return BadRequest(ModelState);
         }
 
-        // DELETE: api/ApiWithActions/5
+        // DELETE: api/Articles/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -76,7 +75,7 @@ namespace NovodBlog.Controllers
         }
 
 
-        public async Task<IActionResult> SendMessage()
+        public async Task<IActionResult> SendMessages()
         {
             EmailService emailService = new EmailService();
             List<Subscribers> emailList = db.Subscribers.ToList();
