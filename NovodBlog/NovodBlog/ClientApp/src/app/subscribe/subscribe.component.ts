@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormArray} from '@angular/forms';
+import { SubscribeService } from '../Services/Subscribe/subscribe.service';
+import { Subscriber } from 'rxjs';
 
 @Component({
   selector: 'app-subscribe',
@@ -8,12 +10,14 @@ import { FormGroup, FormControl, Validators, FormArray} from '@angular/forms';
 })
 export class SubscribeComponent implements OnInit {
 
+  done: boolean = false;
   subscribeForm: FormGroup;
+  public serverError: string;
 
-  constructor() {
+  constructor(private subscribeService: SubscribeService) {
     this.subscribeForm = new FormGroup({
-      "userName": new FormControl("", [Validators.required]),
-      "userEmail": new FormControl("", [
+      "name_of_subscriber": new FormControl("", [Validators.required]),
+      "email": new FormControl("", [
         Validators.required,
         Validators.email
       ])
@@ -23,4 +27,10 @@ export class SubscribeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addSubscriber() {
+    this.subscribeService.addSubsriber(this.subscribeForm.value).subscribe((data) => { this.done = true; },
+      error => { console.log(error); this.serverError = error.message; this.done = false; });
+  }
+
+ 
 }

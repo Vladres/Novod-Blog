@@ -34,6 +34,7 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AuthService } from './Services/Auth/auth.service';
 import { SubscribeComponent } from './subscribe/subscribe.component';
+import { SubscribeService } from './Services/Subscribe/subscribe.service';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,14 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
     }),
     AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [ImagesService, ArticleService, AuthService, ReactiveFormsModule, FormsModule],
+  providers: [
+    ImagesService,
+    ArticleService,
+    AuthService,
+    ReactiveFormsModule,
+    FormsModule,
+    SubscribeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
