@@ -22,7 +22,7 @@
 
 
 .Title {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .MainButtonDiv{
@@ -36,19 +36,19 @@
 
 @media (max-width:1024px) {
   .Title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
 
 @media (min-width:1024px) {
   .Title {
-    font-size: 3rem;
+    font-size: 4.3rem;
   }
 }
 
 @media (min-width:2048px) {
   .Title {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 }

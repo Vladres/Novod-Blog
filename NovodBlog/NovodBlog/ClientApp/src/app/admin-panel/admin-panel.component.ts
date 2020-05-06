@@ -44,8 +44,6 @@ export class AdminPanelComponent implements OnInit {
       error => { console.log(error); this.serverError = error.message; this.done = false; });
   }
 
- 
-
   delete(id: number) {
     this.articleService.deleteArticle(id).subscribe(data => this.loadArticle(),
       error => { console.log(error);});

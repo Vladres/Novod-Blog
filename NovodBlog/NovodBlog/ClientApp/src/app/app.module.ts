@@ -33,6 +33,7 @@ import { MatInputModule } from '@angular/material/input';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AuthService } from './Services/Auth/auth.service';
+import { SubscribeComponent } from './subscribe/subscribe.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { AuthService } from './Services/Auth/auth.service';
     ContentPageComponent,
     ItemComponent,
     AdminPanelComponent,
-    AdminSignInComponent
+    AdminSignInComponent,
+    SubscribeComponent,
   ],
   imports: [
     BrowserModule,

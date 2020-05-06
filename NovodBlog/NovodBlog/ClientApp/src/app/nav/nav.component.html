@@ -8,7 +8,6 @@
       <a mat-list-item routerLink = "">Home page</a>
       <a mat-list-item routerLink = "/content">Content page</a>
       <a mat-list-item routerLink = "/about">About</a>
-      <a *ngIf="auth.user$ | async"><button type="button" class="" (click)="signOut()">Log out</button></a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="UpNavBar ">

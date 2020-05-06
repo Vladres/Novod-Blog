@@ -1,5 +1,4 @@
 <div class="Blog  d-flex flex-column align-items-center  justify-content-between">
-  
   <form [formGroup]="myForm" novalidate class=" p-3 shadow  bg-white rounded">
     <div class="form-group">
       <div class="alert alert-success" role="alert" *ngIf="done">
@@ -47,12 +46,11 @@
     </div>
   </form>
   <div class="Blogs d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let article of articles">
-    <div>
-      <img class="MainBlogImage" src="{{article.imgSource}}" alt="">
-    </div>
-    <div>
-      <p class="h3 Title">{{article.title}}</p><br />
-      <p>{{article.subText}}</p>
+    <div class="flex-fill">
+      <p class="h3 Title">Title : {{article.title}}</p><br />
+      <p><span class="font-weight-bold">Subtext</span> : {{article.subText}}</p>
+      <p><span class="font-weight-bold">Text </span>: {{article.text}}</p>
+      <p><span class="font-weight-bold">Img source </span> : {{article.imgSource}}</p>
       <button type="button" (click)="delete(article.id)" class="btn btn-danger">Delete</button>
     </div>
   </div> 

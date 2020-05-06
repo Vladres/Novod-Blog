@@ -18,7 +18,7 @@
   }
 
   .Blogs {
-    width: 50%;
+    width: 100%;
 
     &:hover {
       opacity: 0.8;
@@ -26,8 +26,4 @@
     }
   }
 
-  .MainBlogImage {
-    width: 100%;
-    max-height: 10vh;
-  }
 }
