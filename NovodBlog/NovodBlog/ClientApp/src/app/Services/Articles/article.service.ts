@@ -34,6 +34,12 @@ export class ArticleService {
 }
 
 export class Article{
+  id: number
+  title: string
+  subText: string
+  text: string
+  imgSource: string
+
   constructor(
     id: number,
     title: string,

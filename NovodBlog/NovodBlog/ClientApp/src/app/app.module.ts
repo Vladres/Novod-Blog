@@ -35,6 +35,7 @@ import { environment } from '../environments/environment';
 import { AuthService } from './Services/Auth/auth.service';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { SubscribeService } from './Services/Subscribe/subscribe.service';
+import { DialogUpdateComponent } from './MatDialog/dialog-update/dialog-update.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { SubscribeService } from './Services/Subscribe/subscribe.service';
     AdminPanelComponent,
     AdminSignInComponent,
     SubscribeComponent,
+    DialogUpdateComponent,
   ],
   imports: [
     BrowserModule,

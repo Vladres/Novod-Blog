@@ -53,7 +53,10 @@
         <p><span class="font-weight-bold">Subtext</span> : {{article.subText}}</p>
         <p><span class="font-weight-bold">Text </span>: {{article.text}}</p>
         <p><span class="font-weight-bold">Img source </span> : {{article.imgSource}}</p>
-        <button type="button" (click)="delete(article.id)" class="btn btn-danger">Delete</button>
+        <div class="d-flex justify-content-between">
+          <button mat-raised-button (click)="openDialog(article)" class="btn btn-success ">Update</button>
+          <button type="button" (click)="delete(article.id)" class="btn btn-danger">Delete</button>
+        </div>
       </div>
     </div>
   </div>
@@ -62,8 +65,8 @@
     <div class="d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let subscriber of subscribers" >
       <div class="flex-fill">
         <p><span class="font-weight-bold">id : {{subscriber.id_subscriber}}</span></p>
-        <p><span class="font-weight-bold">name : {{subscriber.email}}</span></p>
-        <p><span class="font-weight-bold">email : {{subscriber.name_of_subscriber}}</span></p>
+        <p><span class="font-weight-bold">name : {{subscriber.name_of_subscriber}}</span></p>
+        <p><span class="font-weight-bold">email : {{subscriber.email}}</span></p>
         <button type="button" class="btn btn-danger">Delete</button>
       </div>
     </div>

@@ -4,6 +4,8 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 import { AuthService } from '../Services/Auth/auth.service';
 import { Router } from '@angular/router';
 import { SubscribeService, SubsriberOfMyBlog } from '../Services/Subscribe/subscribe.service';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogUpdateComponent } from '../MatDialog/dialog-update/dialog-update.component';
 
 @Component({
   selector: 'app-admin-panel',
@@ -15,13 +17,16 @@ export class AdminPanelComponent implements OnInit {
   public myForm: FormGroup;
   public done: boolean = false;
   public serverError: string;
-  public articles: Article[];
-  public subscribers: SubsriberOfMyBlog []
+  public articles: Article[] = [{ id: 1, title: "test", subText: "test", text: "test", imgSource: " " }];
+  public subscribers: SubsriberOfMyBlog[];
+  public EditItem: Article;
+
 
   constructor(private articleService: ArticleService,
     private authService: AuthService,
     private formBuilder: FormBuilder,
-    private subscribeService: SubscribeService
+    private subscribeService: SubscribeService,
+    public dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
@@ -35,6 +40,18 @@ export class AdminPanelComponent implements OnInit {
     this.loadArticle()
     this.articleService.getArticles().subscribe((result: Article[]) => this.articles = result)
     this.subscribeService.getSubsribers().subscribe((data: SubsriberOfMyBlog[]) => { this.subscribers = data })
+  }
+
+  openDialog(article: Article): void {
+    const dialogRef = this.dialog.open(DialogUpdateComponent, {
+      width: '30%',
+      data: article
+    });
+
+    dialogRef.afterClosed().subscribe((result: Article) => {
+      if (result)
+        this.articleService.updateArticle(result).subscribe(data => { this.loadArticle()})
+    });
   }
 
   loadArticle() {
