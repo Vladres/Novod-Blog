@@ -1,10 +1,11 @@
-.Blog {
+.Block {
   min-height: 70vh;
   margin: auto;
-  max-width: 1140px;
+  max-width:70%;
 
   form {
-    min-width: 50%;
+    min-width:30%;
+
   }
 
   a {
@@ -16,14 +17,4 @@
     font-size: 2.5rem;
     font-family: 'Courgette', cursive;
   }
-
-  .Blogs {
-    width: 100%;
-
-    &:hover {
-      opacity: 0.8;
-      transition: 1s;
-    }
-  }
-
 }

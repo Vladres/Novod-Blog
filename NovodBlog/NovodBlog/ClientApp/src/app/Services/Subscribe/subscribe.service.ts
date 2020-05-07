@@ -18,17 +18,17 @@ export class SubscribeService {
     return this.http.get(this.url + "/" + id);
   }
 
-  addSubsriber(value: Subsriber) {
+  addSubsriber(value: SubsriberOfMyBlog) {
     return this.http.post(this.url, value);
   }
 
-  updateSubsriber(value: Subsriber) {
+  updateSubsriber(value: SubsriberOfMyBlog) {
     return this.http.put(this.url, value);
   }
 }
 
 
-export class Subsriber {
+export class SubsriberOfMyBlog {
   constructor(
     id_subscriber: number,
     email: string,

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormArray} from '@angular/forms';
 import { SubscribeService } from '../Services/Subscribe/subscribe.service';
-import { Subscriber } from 'rxjs';
 
 @Component({
   selector: 'app-subscribe',

@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { SubscribeService } from './subscribe.service';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule, HttpClient, HttpHandler } from '@angular/common/http';
 
 describe('SubscribeService', () => {
   let service: SubscribeService;
@@ -11,7 +11,7 @@ describe('SubscribeService', () => {
       imports: [
         HttpClientModule
       ],
-      providers: [HttpClient]
+      providers: [HttpClient, HttpHandler]
     });
     service = TestBed.inject(SubscribeService);
   });

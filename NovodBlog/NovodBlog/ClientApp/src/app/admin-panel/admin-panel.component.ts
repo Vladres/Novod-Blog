@@ -3,6 +3,7 @@ import { Article, ArticleService } from '../Services/Articles/article.service';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../Services/Auth/auth.service';
 import { Router } from '@angular/router';
+import { SubscribeService, SubsriberOfMyBlog } from '../Services/Subscribe/subscribe.service';
 
 @Component({
   selector: 'app-admin-panel',
@@ -15,10 +16,13 @@ export class AdminPanelComponent implements OnInit {
   public done: boolean = false;
   public serverError: string;
   public articles: Article[];
+  public subscribers: SubsriberOfMyBlog []
 
-  constructor(private articleService: ArticleService, private authService: AuthService, private formBuilder: FormBuilder) { }
-
-  
+  constructor(private articleService: ArticleService,
+    private authService: AuthService,
+    private formBuilder: FormBuilder,
+    private subscribeService: SubscribeService
+  ) { }
 
   ngOnInit(): void {
     this.myForm = this.formBuilder.group({
@@ -28,9 +32,9 @@ export class AdminPanelComponent implements OnInit {
       "subText": ["", [Validators.required]]
     });
 
-    this.loadArticle();
-    
+    this.loadArticle()
     this.articleService.getArticles().subscribe((result: Article[]) => this.articles = result)
+    this.subscribeService.getSubsribers().subscribe((data: SubsriberOfMyBlog[]) => { this.subscribers = data })
   }
 
   loadArticle() {
@@ -48,5 +52,4 @@ export class AdminPanelComponent implements OnInit {
     this.articleService.deleteArticle(id).subscribe(data => this.loadArticle(),
       error => { console.log(error);});
   } 
- 
 }

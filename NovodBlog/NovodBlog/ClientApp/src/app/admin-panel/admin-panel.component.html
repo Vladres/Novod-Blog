@@ -1,4 +1,4 @@
-<div class="Blog  d-flex flex-column align-items-center  justify-content-between">
+<div class="Block d-flex flex-wrap flex-column   justify-content-between p-3">
   <form [formGroup]="myForm" novalidate class=" p-3 shadow  bg-white rounded">
     <div class="form-group">
       <div class="alert alert-success" role="alert" *ngIf="done">
@@ -45,14 +45,28 @@
       <button type="button" (click)="save()" class="btn btn-success">Save</button>
     </div>
   </form>
-  <div class="Blogs d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let article of articles">
-    <div class="flex-fill">
-      <p class="h3 Title">Title : {{article.title}}</p><br />
-      <p><span class="font-weight-bold">Subtext</span> : {{article.subText}}</p>
-      <p><span class="font-weight-bold">Text </span>: {{article.text}}</p>
-      <p><span class="font-weight-bold">Img source </span> : {{article.imgSource}}</p>
-      <button type="button" (click)="delete(article.id)" class="btn btn-danger">Delete</button>
+  <div class="flex-fill p-2">
+    <p class="h2 text-center">Articles</p>
+    <div class="Blogs d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let article of articles">
+      <div class="flex-fill">
+        <p class="h3 Title">Title : {{article.title}}</p><br />
+        <p><span class="font-weight-bold">Subtext</span> : {{article.subText}}</p>
+        <p><span class="font-weight-bold">Text </span>: {{article.text}}</p>
+        <p><span class="font-weight-bold">Img source </span> : {{article.imgSource}}</p>
+        <button type="button" (click)="delete(article.id)" class="btn btn-danger">Delete</button>
+      </div>
     </div>
-  </div> 
+  </div>
+  <div class="flex-fill p-2">
+    <p class="h2 text-center">Subscribers</p>
+    <div class="d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let subscriber of subscribers" >
+      <div class="flex-fill">
+        <p><span class="font-weight-bold">id : {{subscriber.id_subscriber}}</span></p>
+        <p><span class="font-weight-bold">name : {{subscriber.email}}</span></p>
+        <p><span class="font-weight-bold">email : {{subscriber.name_of_subscriber}}</span></p>
+        <button type="button" class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
 </div>
 

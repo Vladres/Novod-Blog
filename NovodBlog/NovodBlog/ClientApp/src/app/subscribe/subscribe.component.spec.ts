@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SubscribeComponent } from './subscribe.component';
+import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
 
 describe('SubscribeComponent', () => {
   let component: SubscribeComponent;
@@ -8,7 +9,9 @@ describe('SubscribeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SubscribeComponent ]
+      declarations: [SubscribeComponent],
+      
+      providers: [HttpClient, HttpHandler]
     })
     .compileComponents();
   }));
