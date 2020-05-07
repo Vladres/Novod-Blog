@@ -40,13 +40,12 @@ export class AdminPanelComponent implements OnInit {
     });
 
     this.loadArticle()
-    this.articleService.getArticles().subscribe((result: Article[]) => this.articles = result)
-    this.subscribeService.getSubsribers().subscribe((data: SubsriberOfMyBlog[]) => { this.subscribers = data })
+    this.loadSubscriber()
   }
 
   openDialogCreate(article: Article): void {
     const dialogRef = this.dialog.open(DialogUpdateComponent, {
-      width: '30%',
+      width: '500px',
       data: article
     });
 
@@ -74,6 +73,10 @@ export class AdminPanelComponent implements OnInit {
       .subscribe((data: Article[]) => this.articles = data);
   }
 
+  loadSubscriber() {
+    this.subscribeService.getSubsribers().subscribe((data: SubsriberOfMyBlog[]) => { this.subscribers = data })
+  }
+
   save() {
     console.log(this.myForm.value);
     this.articleService.addArticle(this.myForm.value).subscribe((data: Article) => { this.done = true; this.loadArticle()},
@@ -83,5 +86,10 @@ export class AdminPanelComponent implements OnInit {
   delete(id: number) {
     this.articleService.deleteArticle(id).subscribe(data => this.loadArticle(),
       error => { console.log(error);});
+  }
+
+  deleteSubscriber(id: number) {
+    this.subscribeService.deleteSubscriber(id).subscribe(data => this.loadSubscriber(),
+      error => { console.log(error); });
   } 
 }

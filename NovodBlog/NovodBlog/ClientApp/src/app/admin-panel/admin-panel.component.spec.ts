@@ -9,6 +9,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../../environments/environment';
+import { MAT_DIALOG_DEFAULT_OPTIONS, MatDialog, MatDialogRef, MatDialogModule } from '@angular/material/dialog';
 
 describe('AdminPanelComponent', () => {
   let component: AdminPanelComponent;
@@ -22,8 +23,13 @@ describe('AdminPanelComponent', () => {
         RouterTestingModule, HttpClientTestingModule,
         AngularFireModule.initializeApp(environment.firebase),
         AngularFireDatabaseModule,
+        MatDialogModule
       ],
-      providers: [HttpClient],
+     
+      providers: [HttpClient,
+        { provide: MatDialogRef, useValue: {  } },
+        
+      ],
       declarations: [ AdminPanelComponent ]
     })
     .compileComponents();

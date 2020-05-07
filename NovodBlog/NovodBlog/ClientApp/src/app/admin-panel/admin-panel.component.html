@@ -45,7 +45,7 @@
       <button type="button" (click)="save()" class="btn btn-success">Save</button>
     </div>
   </form>
-  <div class="flex-fill p-2">
+  <div class="flex-fill p-2 w-100">
     <p class="h2 text-center">Articles</p>
     <div class="Blogs d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let article of articles">
       <div class="flex-fill">
@@ -60,14 +60,14 @@
       </div>
     </div>
   </div>
-  <div class="flex-fill p-2">
+  <div class="flex-fill p-2 w-100">
     <p class="h2 text-center">Subscribers</p>
     <div class="d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let subscriber of subscribers" >
       <div class="flex-fill">
         <p><span class="font-weight-bold">id : {{subscriber.id_subscriber}}</span></p>
         <p><span class="font-weight-bold">name : {{subscriber.name_of_subscriber}}</span></p>
         <p><span class="font-weight-bold">email : {{subscriber.email}}</span></p>
-        <button type="button" class="btn btn-danger">Delete</button>
+        <button type="button" class="btn btn-danger" (click) ="deleteSubscriber(subscriber.id_subscriber)">Delete</button>
       </div>
     </div>
   </div>
