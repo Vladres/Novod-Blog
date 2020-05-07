@@ -23,6 +23,66 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./src/app/MatDialog/dialog-delele/dialog-delele.component.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/MatDialog/dialog-delele/dialog-delele.component.ts ***!
+  \********************************************************************/
+/*! exports provided: DialogDeleleComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DialogDeleleComponent", function() { return DialogDeleleComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/dialog.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
+
+
+
+
+
+class DialogDeleleComponent {
+    constructor(dialogRef, data) {
+        this.dialogRef = dialogRef;
+        this.data = data;
+    }
+    ngOnInit() {
+    }
+}
+DialogDeleleComponent.ɵfac = function DialogDeleleComponent_Factory(t) { return new (t || DialogDeleleComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MAT_DIALOG_DATA"])); };
+DialogDeleleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DialogDeleleComponent, selectors: [["app-dialog-delele"]], decls: 8, vars: 1, consts: [[1, "container"], ["mat-dialog-title", ""], [1, "d-flex", "justify-content-between"], ["mat-button", "", "mat-dialog-close", "", 1, "btn", "btn-primary"], ["mat-button", "", "cdkFocusInitial", "", 1, "btn", "btn-primary", 3, "mat-dialog-close"]], template: function DialogDeleleComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Are you sure you want to remove this item?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "button", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "No Thanks");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Remove");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("mat-dialog-close", ctx.data);
+    } }, directives: [_angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogTitle"], _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButton"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogClose"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL01hdERpYWxvZy9kaWFsb2ctZGVsZWxlL2RpYWxvZy1kZWxlbGUuY29tcG9uZW50LnNjc3MifQ== */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DialogDeleleComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-dialog-delele',
+                templateUrl: './dialog-delele.component.html',
+                styleUrls: ['./dialog-delele.component.scss']
+            }]
+    }], function () { return [{ type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"] }, { type: undefined, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
+                args: [_angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MAT_DIALOG_DATA"]]
+            }] }]; }, null); })();
+
+
+/***/ }),
+
 /***/ "./src/app/MatDialog/dialog-update/dialog-update.component.ts":
 /*!********************************************************************!*\
   !*** ./src/app/MatDialog/dialog-update/dialog-update.component.ts ***!
@@ -402,12 +462,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 /* harmony import */ var _MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../MatDialog/dialog-update/dialog-update.component */ "./src/app/MatDialog/dialog-update/dialog-update.component.ts");
-/* harmony import */ var _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Services/Articles/article.service */ "./src/app/Services/Articles/article.service.ts");
-/* harmony import */ var _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Services/Auth/auth.service */ "./src/app/Services/Auth/auth.service.ts");
-/* harmony import */ var _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Services/Subscribe/subscribe.service */ "./src/app/Services/Subscribe/subscribe.service.ts");
-/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/dialog.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
+/* harmony import */ var _MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../MatDialog/dialog-delele/dialog-delele.component */ "./src/app/MatDialog/dialog-delele/dialog-delele.component.ts");
+/* harmony import */ var _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Services/Articles/article.service */ "./src/app/Services/Articles/article.service.ts");
+/* harmony import */ var _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Services/Auth/auth.service */ "./src/app/Services/Auth/auth.service.ts");
+/* harmony import */ var _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Services/Subscribe/subscribe.service */ "./src/app/Services/Subscribe/subscribe.service.ts");
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/dialog.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
+
 
 
 
@@ -479,13 +541,15 @@ function AdminPanelComponent_div_33_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "button", 23);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AdminPanelComponent_div_33_Template_button_click_17_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13); const article_r11 = ctx.$implicit; const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r12.delete(article_r11.id); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Delete");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "button", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AdminPanelComponent_div_33_Template_button_click_18_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13); const article_r11 = ctx.$implicit; const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r12.openDialogCreate(article_r11); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Update");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "button", 24);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AdminPanelComponent_div_33_Template_button_click_19_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13); const article_r11 = ctx.$implicit; const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r14.openDialog(article_r11); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Update");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "button", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AdminPanelComponent_div_33_Template_button_click_20_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13); const article_r11 = ctx.$implicit; const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r14.openDialogDelete(article_r11.id); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Delete");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -553,7 +617,7 @@ class AdminPanelComponent {
         this.articleService.getArticles().subscribe((result) => this.articles = result);
         this.subscribeService.getSubsribers().subscribe((data) => { this.subscribers = data; });
     }
-    openDialog(article) {
+    openDialogCreate(article) {
         const dialogRef = this.dialog.open(_MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_2__["DialogUpdateComponent"], {
             width: '30%',
             data: article
@@ -561,6 +625,17 @@ class AdminPanelComponent {
         dialogRef.afterClosed().subscribe((result) => {
             if (result)
                 this.articleService.updateArticle(result).subscribe(data => { this.loadArticle(); });
+        });
+    }
+    openDialogDelete(idOfElement) {
+        const dialogRef = this.dialog.open(_MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_3__["DialogDeleleComponent"], {
+            width: '30%',
+            data: { id: idOfElement }
+        });
+        dialogRef.afterClosed().subscribe((result) => {
+            if (result)
+                this.delete(result.id);
+            console.log(result.id);
         });
     }
     loadArticle() {
@@ -575,8 +650,8 @@ class AdminPanelComponent {
         this.articleService.deleteArticle(id).subscribe(data => this.loadArticle(), error => { console.log(error); });
     }
 }
-AdminPanelComponent.ɵfac = function AdminPanelComponent_Factory(t) { return new (t || AdminPanelComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_3__["ArticleService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_5__["SubscribeService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialog"])); };
-AdminPanelComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AdminPanelComponent, selectors: [["app-admin-panel"]], decls: 38, vars: 9, consts: [[1, "Block", "d-flex", "flex-wrap", "flex-column", "justify-content-between", "p-3"], ["novalidate", "", 1, "p-3", "shadow", "bg-white", "rounded", 3, "formGroup"], [1, "form-group"], ["class", "alert alert-success", "role", "alert", 4, "ngIf"], ["class", "alert alert-danger", "role", "alert", 4, "ngIf"], ["type", "text", "required", "", "name", "", "formControlName", "Title", 1, "form-control"], ["class", "alert alert-danger", 4, "ngIf"], ["type", "text", "required", "", "formControlName", "Text", 1, "form-control"], ["type", "text", "required", "", "formControlName", "subText", 1, "form-control"], ["type", "text", "required", "", "formControlName", "imgSource", 1, "form-control"], [1, "d-flex", "justify-content-between"], ["type", "button", 1, "btn", "btn-success", 3, "click"], [1, "flex-fill", "p-2"], [1, "h2", "text-center"], ["class", "Blogs d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded", 4, "ngFor", "ngForOf"], ["class", "d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded", 4, "ngFor", "ngForOf"], ["role", "alert", 1, "alert", "alert-success"], ["role", "alert", 1, "alert", "alert-danger"], [1, "alert", "alert-danger"], [1, "Blogs", "d-flex", "flex-column", "m-2", "shadow", "p-3", "mb-5", "bg-white", "rounded"], [1, "flex-fill"], [1, "h3", "Title"], [1, "font-weight-bold"], ["type", "button", 1, "btn", "btn-danger", 3, "click"], ["mat-raised-button", "", 1, "btn", "btn-success", 3, "click"], [1, "d-flex", "flex-column", "m-2", "shadow", "p-3", "mb-5", "bg-white", "rounded"], ["type", "button", 1, "btn", "btn-danger"]], template: function AdminPanelComponent_Template(rf, ctx) { if (rf & 1) {
+AdminPanelComponent.ɵfac = function AdminPanelComponent_Factory(t) { return new (t || AdminPanelComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_4__["ArticleService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_6__["SubscribeService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__["MatDialog"])); };
+AdminPanelComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AdminPanelComponent, selectors: [["app-admin-panel"]], decls: 38, vars: 9, consts: [[1, "Block", "d-flex", "flex-wrap", "flex-column", "justify-content-between", "p-3"], ["novalidate", "", 1, "p-3", "shadow", "bg-white", "rounded", 3, "formGroup"], [1, "form-group"], ["class", "alert alert-success", "role", "alert", 4, "ngIf"], ["class", "alert alert-danger", "role", "alert", 4, "ngIf"], ["type", "text", "required", "", "name", "", "formControlName", "Title", 1, "form-control"], ["class", "alert alert-danger", 4, "ngIf"], ["type", "text", "required", "", "formControlName", "Text", 1, "form-control"], ["type", "text", "required", "", "formControlName", "subText", 1, "form-control"], ["type", "text", "required", "", "formControlName", "imgSource", 1, "form-control"], [1, "d-flex", "justify-content-between"], ["type", "button", 1, "btn", "btn-success", 3, "click"], [1, "flex-fill", "p-2"], [1, "h2", "text-center"], ["class", "Blogs d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded", 4, "ngFor", "ngForOf"], ["class", "d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded", 4, "ngFor", "ngForOf"], ["role", "alert", 1, "alert", "alert-success"], ["role", "alert", 1, "alert", "alert-danger"], [1, "alert", "alert-danger"], [1, "Blogs", "d-flex", "flex-column", "m-2", "shadow", "p-3", "mb-5", "bg-white", "rounded"], [1, "flex-fill"], [1, "h3", "Title"], [1, "font-weight-bold"], ["mat-raised-button", "", 1, "btn", "btn-success", 3, "click"], ["type", "button", 1, "btn", "btn-danger", 3, "click"], [1, "d-flex", "flex-column", "m-2", "shadow", "p-3", "mb-5", "bg-white", "rounded"], ["type", "button", 1, "btn", "btn-danger"]], template: function AdminPanelComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "form", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -625,7 +700,7 @@ AdminPanelComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "p", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Articles");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](33, AdminPanelComponent_div_33_Template, 21, 4, "div", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](33, AdminPanelComponent_div_33_Template, 22, 4, "div", 14);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "div", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "p", 13);
@@ -653,7 +728,7 @@ AdminPanelComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.articles);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.subscribers);
-    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgForOf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButton"]], styles: [".Block[_ngcontent-%COMP%] {\n  min-height: 70vh;\n  margin: auto;\n  max-width: 70%;\n}\n.Block[_ngcontent-%COMP%]   form[_ngcontent-%COMP%] {\n  min-width: 30%;\n}\n.Block[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #000;\n  text-decoration: none;\n}\n.Block[_ngcontent-%COMP%]   .Title[_ngcontent-%COMP%] {\n  font-size: 2.5rem;\n  font-family: \"Courgette\", cursive;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4tcGFuZWwvQzpcXFVzZXJzXFxWbGFkaXNsYXZcXHNvdXJjZVxcV2ViU2l0ZVxcV2ViU2l0ZVxcTm92b2RCbG9nXFxOb3ZvZEJsb2dcXENsaWVudEFwcC9zcmNcXGFwcFxcYWRtaW4tcGFuZWxcXGFkbWluLXBhbmVsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFBO0VBQ0EsWUFBQTtFQUNBLGNBQUE7QUNDRjtBRENFO0VBQ0UsY0FBQTtBQ0NKO0FER0U7RUFDRSxXQUFBO0VBQ0EscUJBQUE7QUNESjtBRElFO0VBQ0UsaUJBQUE7RUFDQSxpQ0FBQTtBQ0ZKIiwiZmlsZSI6InNyYy9hcHAvYWRtaW4tcGFuZWwvYWRtaW4tcGFuZWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuQmxvY2sge1xuICBtaW4taGVpZ2h0OiA3MHZoO1xuICBtYXJnaW46IGF1dG87XG4gIG1heC13aWR0aDo3MCU7XG5cbiAgZm9ybSB7XG4gICAgbWluLXdpZHRoOjMwJTtcblxuICB9XG5cbiAgYSB7XG4gICAgY29sb3I6ICMwMDA7XG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICB9XG5cbiAgLlRpdGxlIHtcbiAgICBmb250LXNpemU6IDIuNXJlbTtcbiAgICBmb250LWZhbWlseTogJ0NvdXJnZXR0ZScsIGN1cnNpdmU7XG4gIH1cbn1cbiIsIi5CbG9jayB7XG4gIG1pbi1oZWlnaHQ6IDcwdmg7XG4gIG1hcmdpbjogYXV0bztcbiAgbWF4LXdpZHRoOiA3MCU7XG59XG4uQmxvY2sgZm9ybSB7XG4gIG1pbi13aWR0aDogMzAlO1xufVxuLkJsb2NrIGEge1xuICBjb2xvcjogIzAwMDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuLkJsb2NrIC5UaXRsZSB7XG4gIGZvbnQtc2l6ZTogMi41cmVtO1xuICBmb250LWZhbWlseTogXCJDb3VyZ2V0dGVcIiwgY3Vyc2l2ZTtcbn0iXX0= */"] });
+    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgForOf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_9__["MatButton"]], styles: [".Block[_ngcontent-%COMP%] {\n  min-height: 70vh;\n  margin: auto;\n  max-width: 70%;\n}\n.Block[_ngcontent-%COMP%]   form[_ngcontent-%COMP%] {\n  min-width: 30%;\n}\n.Block[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #000;\n  text-decoration: none;\n}\n.Block[_ngcontent-%COMP%]   .Title[_ngcontent-%COMP%] {\n  font-size: 2.5rem;\n  font-family: \"Courgette\", cursive;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4tcGFuZWwvQzpcXFVzZXJzXFxWbGFkaXNsYXZcXHNvdXJjZVxcV2ViU2l0ZVxcV2ViU2l0ZVxcTm92b2RCbG9nXFxOb3ZvZEJsb2dcXENsaWVudEFwcC9zcmNcXGFwcFxcYWRtaW4tcGFuZWxcXGFkbWluLXBhbmVsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFBO0VBQ0EsWUFBQTtFQUNBLGNBQUE7QUNDRjtBRENFO0VBQ0UsY0FBQTtBQ0NKO0FER0U7RUFDRSxXQUFBO0VBQ0EscUJBQUE7QUNESjtBRElFO0VBQ0UsaUJBQUE7RUFDQSxpQ0FBQTtBQ0ZKIiwiZmlsZSI6InNyYy9hcHAvYWRtaW4tcGFuZWwvYWRtaW4tcGFuZWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuQmxvY2sge1xuICBtaW4taGVpZ2h0OiA3MHZoO1xuICBtYXJnaW46IGF1dG87XG4gIG1heC13aWR0aDo3MCU7XG5cbiAgZm9ybSB7XG4gICAgbWluLXdpZHRoOjMwJTtcblxuICB9XG5cbiAgYSB7XG4gICAgY29sb3I6ICMwMDA7XG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICB9XG5cbiAgLlRpdGxlIHtcbiAgICBmb250LXNpemU6IDIuNXJlbTtcbiAgICBmb250LWZhbWlseTogJ0NvdXJnZXR0ZScsIGN1cnNpdmU7XG4gIH1cbn1cbiIsIi5CbG9jayB7XG4gIG1pbi1oZWlnaHQ6IDcwdmg7XG4gIG1hcmdpbjogYXV0bztcbiAgbWF4LXdpZHRoOiA3MCU7XG59XG4uQmxvY2sgZm9ybSB7XG4gIG1pbi13aWR0aDogMzAlO1xufVxuLkJsb2NrIGEge1xuICBjb2xvcjogIzAwMDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuLkJsb2NrIC5UaXRsZSB7XG4gIGZvbnQtc2l6ZTogMi41cmVtO1xuICBmb250LWZhbWlseTogXCJDb3VyZ2V0dGVcIiwgY3Vyc2l2ZTtcbn0iXX0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AdminPanelComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -661,7 +736,7 @@ AdminPanelComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
                 templateUrl: './admin-panel.component.html',
                 styleUrls: ['./admin-panel.component.scss']
             }]
-    }], function () { return [{ type: _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_3__["ArticleService"] }, { type: _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"] }, { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] }, { type: _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_5__["SubscribeService"] }, { type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialog"] }]; }, null); })();
+    }], function () { return [{ type: _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_4__["ArticleService"] }, { type: _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"] }, { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] }, { type: _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_6__["SubscribeService"] }, { type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__["MatDialog"] }]; }, null); })();
 
 
 /***/ }),
@@ -922,6 +997,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./subscribe/subscribe.component */ "./src/app/subscribe/subscribe.component.ts");
 /* harmony import */ var _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./Services/Subscribe/subscribe.service */ "./src/app/Services/Subscribe/subscribe.service.ts");
 /* harmony import */ var _MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./MatDialog/dialog-update/dialog-update.component */ "./src/app/MatDialog/dialog-update/dialog-update.component.ts");
+/* harmony import */ var _MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./MatDialog/dialog-delele/dialog-delele.component */ "./src/app/MatDialog/dialog-delele/dialog-delele.component.ts");
+
 
 
 
@@ -1006,7 +1083,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_25__["AdminPanelComponent"],
         _admin_sign_in_admin_sign_in_component__WEBPACK_IMPORTED_MODULE_28__["AdminSignInComponent"],
         _subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_33__["SubscribeComponent"],
-        _MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_35__["DialogUpdateComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_35__["DialogUpdateComponent"],
+        _MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_36__["DialogDeleleComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_10__["FormsModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
         _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModule"],
@@ -1039,6 +1117,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _admin_sign_in_admin_sign_in_component__WEBPACK_IMPORTED_MODULE_28__["AdminSignInComponent"],
                     _subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_33__["SubscribeComponent"],
                     _MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_35__["DialogUpdateComponent"],
+                    _MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_36__["DialogDeleleComponent"],
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],

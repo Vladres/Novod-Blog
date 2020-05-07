@@ -36,6 +36,7 @@ import { AuthService } from './Services/Auth/auth.service';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { SubscribeService } from './Services/Subscribe/subscribe.service';
 import { DialogUpdateComponent } from './MatDialog/dialog-update/dialog-update.component';
+import { DialogDeleleComponent } from './MatDialog/dialog-delele/dialog-delele.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { DialogUpdateComponent } from './MatDialog/dialog-update/dialog-update.c
     AdminSignInComponent,
     SubscribeComponent,
     DialogUpdateComponent,
+    DialogDeleleComponent,
   ],
   imports: [
     BrowserModule,

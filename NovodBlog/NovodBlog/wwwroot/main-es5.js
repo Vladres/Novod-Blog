@@ -36,6 +36,136 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/MatDialog/dialog-delele/dialog-delele.component.ts":
+  /*!********************************************************************!*\
+    !*** ./src/app/MatDialog/dialog-delele/dialog-delele.component.ts ***!
+    \********************************************************************/
+
+  /*! exports provided: DialogDeleleComponent */
+
+  /***/
+  function srcAppMatDialogDialogDeleleDialogDeleleComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DialogDeleleComponent", function () {
+      return DialogDeleleComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/material/dialog */
+    "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/dialog.js");
+    /* harmony import */
+
+
+    var _angular_material_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/material/button */
+    "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
+
+    var DialogDeleleComponent =
+    /*#__PURE__*/
+    function () {
+      function DialogDeleleComponent(dialogRef, data) {
+        _classCallCheck(this, DialogDeleleComponent);
+
+        this.dialogRef = dialogRef;
+        this.data = data;
+      }
+
+      _createClass(DialogDeleleComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return DialogDeleleComponent;
+    }();
+
+    DialogDeleleComponent.ɵfac = function DialogDeleleComponent_Factory(t) {
+      return new (t || DialogDeleleComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MAT_DIALOG_DATA"]));
+    };
+
+    DialogDeleleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: DialogDeleleComponent,
+      selectors: [["app-dialog-delele"]],
+      decls: 8,
+      vars: 1,
+      consts: [[1, "container"], ["mat-dialog-title", ""], [1, "d-flex", "justify-content-between"], ["mat-button", "", "mat-dialog-close", "", 1, "btn", "btn-primary"], ["mat-button", "", "cdkFocusInitial", "", 1, "btn", "btn-primary", 3, "mat-dialog-close"]],
+      template: function DialogDeleleComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Are you sure you want to remove this item?");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "button", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "No Thanks");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "button", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Remove");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("mat-dialog-close", ctx.data);
+        }
+      },
+      directives: [_angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogTitle"], _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButton"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogClose"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL01hdERpYWxvZy9kaWFsb2ctZGVsZWxlL2RpYWxvZy1kZWxlbGUuY29tcG9uZW50LnNjc3MifQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DialogDeleleComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-dialog-delele',
+          templateUrl: './dialog-delele.component.html',
+          styleUrls: ['./dialog-delele.component.scss']
+        }]
+      }], function () {
+        return [{
+          type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"]
+        }, {
+          type: undefined,
+          decorators: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
+            args: [_angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MAT_DIALOG_DATA"]]
+          }]
+        }];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
   "./src/app/MatDialog/dialog-update/dialog-update.component.ts":
   /*!********************************************************************!*\
     !*** ./src/app/MatDialog/dialog-update/dialog-update.component.ts ***!
@@ -889,37 +1019,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../MatDialog/dialog-delele/dialog-delele.component */
+    "./src/app/MatDialog/dialog-delele/dialog-delele.component.ts");
+    /* harmony import */
+
+
+    var _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ../Services/Articles/article.service */
     "./src/app/Services/Articles/article.service.ts");
     /* harmony import */
 
 
-    var _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ../Services/Auth/auth.service */
     "./src/app/Services/Auth/auth.service.ts");
     /* harmony import */
 
 
-    var _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ../Services/Subscribe/subscribe.service */
     "./src/app/Services/Subscribe/subscribe.service.ts");
     /* harmony import */
 
 
-    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/material/dialog */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/dialog.js");
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
     /* harmony import */
 
 
-    var _angular_material_button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _angular_material_button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! @angular/material/button */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
 
@@ -1043,35 +1179,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "button", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 10);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AdminPanelComponent_div_33_Template_button_click_17_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "button", 23);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AdminPanelComponent_div_33_Template_button_click_18_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13);
 
           var article_r11 = ctx.$implicit;
 
           var ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          return ctx_r12["delete"](article_r11.id);
+          return ctx_r12.openDialogCreate(article_r11);
         });
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Delete");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Update");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "button", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "button", 24);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AdminPanelComponent_div_33_Template_button_click_19_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AdminPanelComponent_div_33_Template_button_click_20_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13);
 
           var article_r11 = ctx.$implicit;
 
           var ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          return ctx_r14.openDialog(article_r11);
+          return ctx_r14.openDialogDelete(article_r11.id);
         });
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Update");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Delete");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1206,8 +1346,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
         }
       }, {
-        key: "openDialog",
-        value: function openDialog(article) {
+        key: "openDialogCreate",
+        value: function openDialogCreate(article) {
           var _this3 = this;
 
           var dialogRef = this.dialog.open(_MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_2__["DialogUpdateComponent"], {
@@ -1221,37 +1361,53 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
         }
       }, {
-        key: "loadArticle",
-        value: function loadArticle() {
+        key: "openDialogDelete",
+        value: function openDialogDelete(idOfElement) {
           var _this4 = this;
 
+          var dialogRef = this.dialog.open(_MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_3__["DialogDeleleComponent"], {
+            width: '30%',
+            data: {
+              id: idOfElement
+            }
+          });
+          dialogRef.afterClosed().subscribe(function (result) {
+            if (result) _this4["delete"](result.id);
+            console.log(result.id);
+          });
+        }
+      }, {
+        key: "loadArticle",
+        value: function loadArticle() {
+          var _this5 = this;
+
           this.articleService.getArticles().subscribe(function (data) {
-            return _this4.articles = data;
+            return _this5.articles = data;
           });
         }
       }, {
         key: "save",
         value: function save() {
-          var _this5 = this;
+          var _this6 = this;
 
           console.log(this.myForm.value);
           this.articleService.addArticle(this.myForm.value).subscribe(function (data) {
-            _this5.done = true;
+            _this6.done = true;
 
-            _this5.loadArticle();
+            _this6.loadArticle();
           }, function (error) {
             console.log(error);
-            _this5.serverError = error.message;
-            _this5.done = false;
+            _this6.serverError = error.message;
+            _this6.done = false;
           });
         }
       }, {
         key: "delete",
         value: function _delete(id) {
-          var _this6 = this;
+          var _this7 = this;
 
           this.articleService.deleteArticle(id).subscribe(function (data) {
-            return _this6.loadArticle();
+            return _this7.loadArticle();
           }, function (error) {
             console.log(error);
           });
@@ -1262,7 +1418,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }();
 
     AdminPanelComponent.ɵfac = function AdminPanelComponent_Factory(t) {
-      return new (t || AdminPanelComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_3__["ArticleService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_5__["SubscribeService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialog"]));
+      return new (t || AdminPanelComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_4__["ArticleService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_6__["SubscribeService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__["MatDialog"]));
     };
 
     AdminPanelComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -1270,7 +1426,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-admin-panel"]],
       decls: 38,
       vars: 9,
-      consts: [[1, "Block", "d-flex", "flex-wrap", "flex-column", "justify-content-between", "p-3"], ["novalidate", "", 1, "p-3", "shadow", "bg-white", "rounded", 3, "formGroup"], [1, "form-group"], ["class", "alert alert-success", "role", "alert", 4, "ngIf"], ["class", "alert alert-danger", "role", "alert", 4, "ngIf"], ["type", "text", "required", "", "name", "", "formControlName", "Title", 1, "form-control"], ["class", "alert alert-danger", 4, "ngIf"], ["type", "text", "required", "", "formControlName", "Text", 1, "form-control"], ["type", "text", "required", "", "formControlName", "subText", 1, "form-control"], ["type", "text", "required", "", "formControlName", "imgSource", 1, "form-control"], [1, "d-flex", "justify-content-between"], ["type", "button", 1, "btn", "btn-success", 3, "click"], [1, "flex-fill", "p-2"], [1, "h2", "text-center"], ["class", "Blogs d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded", 4, "ngFor", "ngForOf"], ["class", "d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded", 4, "ngFor", "ngForOf"], ["role", "alert", 1, "alert", "alert-success"], ["role", "alert", 1, "alert", "alert-danger"], [1, "alert", "alert-danger"], [1, "Blogs", "d-flex", "flex-column", "m-2", "shadow", "p-3", "mb-5", "bg-white", "rounded"], [1, "flex-fill"], [1, "h3", "Title"], [1, "font-weight-bold"], ["type", "button", 1, "btn", "btn-danger", 3, "click"], ["mat-raised-button", "", 1, "btn", "btn-success", 3, "click"], [1, "d-flex", "flex-column", "m-2", "shadow", "p-3", "mb-5", "bg-white", "rounded"], ["type", "button", 1, "btn", "btn-danger"]],
+      consts: [[1, "Block", "d-flex", "flex-wrap", "flex-column", "justify-content-between", "p-3"], ["novalidate", "", 1, "p-3", "shadow", "bg-white", "rounded", 3, "formGroup"], [1, "form-group"], ["class", "alert alert-success", "role", "alert", 4, "ngIf"], ["class", "alert alert-danger", "role", "alert", 4, "ngIf"], ["type", "text", "required", "", "name", "", "formControlName", "Title", 1, "form-control"], ["class", "alert alert-danger", 4, "ngIf"], ["type", "text", "required", "", "formControlName", "Text", 1, "form-control"], ["type", "text", "required", "", "formControlName", "subText", 1, "form-control"], ["type", "text", "required", "", "formControlName", "imgSource", 1, "form-control"], [1, "d-flex", "justify-content-between"], ["type", "button", 1, "btn", "btn-success", 3, "click"], [1, "flex-fill", "p-2"], [1, "h2", "text-center"], ["class", "Blogs d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded", 4, "ngFor", "ngForOf"], ["class", "d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded", 4, "ngFor", "ngForOf"], ["role", "alert", 1, "alert", "alert-success"], ["role", "alert", 1, "alert", "alert-danger"], [1, "alert", "alert-danger"], [1, "Blogs", "d-flex", "flex-column", "m-2", "shadow", "p-3", "mb-5", "bg-white", "rounded"], [1, "flex-fill"], [1, "h3", "Title"], [1, "font-weight-bold"], ["mat-raised-button", "", 1, "btn", "btn-success", 3, "click"], ["type", "button", 1, "btn", "btn-danger", 3, "click"], [1, "d-flex", "flex-column", "m-2", "shadow", "p-3", "mb-5", "bg-white", "rounded"], ["type", "button", 1, "btn", "btn-danger"]],
       template: function AdminPanelComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -1371,7 +1527,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](33, AdminPanelComponent_div_33_Template, 21, 4, "div", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](33, AdminPanelComponent_div_33_Template, 22, 4, "div", 14);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1428,7 +1584,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.subscribers);
         }
       },
-      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgForOf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButton"]],
+      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgForOf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_9__["MatButton"]],
       styles: [".Block[_ngcontent-%COMP%] {\n  min-height: 70vh;\n  margin: auto;\n  max-width: 70%;\n}\n.Block[_ngcontent-%COMP%]   form[_ngcontent-%COMP%] {\n  min-width: 30%;\n}\n.Block[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #000;\n  text-decoration: none;\n}\n.Block[_ngcontent-%COMP%]   .Title[_ngcontent-%COMP%] {\n  font-size: 2.5rem;\n  font-family: \"Courgette\", cursive;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4tcGFuZWwvQzpcXFVzZXJzXFxWbGFkaXNsYXZcXHNvdXJjZVxcV2ViU2l0ZVxcV2ViU2l0ZVxcTm92b2RCbG9nXFxOb3ZvZEJsb2dcXENsaWVudEFwcC9zcmNcXGFwcFxcYWRtaW4tcGFuZWxcXGFkbWluLXBhbmVsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFBO0VBQ0EsWUFBQTtFQUNBLGNBQUE7QUNDRjtBRENFO0VBQ0UsY0FBQTtBQ0NKO0FER0U7RUFDRSxXQUFBO0VBQ0EscUJBQUE7QUNESjtBRElFO0VBQ0UsaUJBQUE7RUFDQSxpQ0FBQTtBQ0ZKIiwiZmlsZSI6InNyYy9hcHAvYWRtaW4tcGFuZWwvYWRtaW4tcGFuZWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuQmxvY2sge1xuICBtaW4taGVpZ2h0OiA3MHZoO1xuICBtYXJnaW46IGF1dG87XG4gIG1heC13aWR0aDo3MCU7XG5cbiAgZm9ybSB7XG4gICAgbWluLXdpZHRoOjMwJTtcblxuICB9XG5cbiAgYSB7XG4gICAgY29sb3I6ICMwMDA7XG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICB9XG5cbiAgLlRpdGxlIHtcbiAgICBmb250LXNpemU6IDIuNXJlbTtcbiAgICBmb250LWZhbWlseTogJ0NvdXJnZXR0ZScsIGN1cnNpdmU7XG4gIH1cbn1cbiIsIi5CbG9jayB7XG4gIG1pbi1oZWlnaHQ6IDcwdmg7XG4gIG1hcmdpbjogYXV0bztcbiAgbWF4LXdpZHRoOiA3MCU7XG59XG4uQmxvY2sgZm9ybSB7XG4gIG1pbi13aWR0aDogMzAlO1xufVxuLkJsb2NrIGEge1xuICBjb2xvcjogIzAwMDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuLkJsb2NrIC5UaXRsZSB7XG4gIGZvbnQtc2l6ZTogMi41cmVtO1xuICBmb250LWZhbWlseTogXCJDb3VyZ2V0dGVcIiwgY3Vyc2l2ZTtcbn0iXX0= */"]
     });
     /*@__PURE__*/
@@ -1443,15 +1599,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }]
       }], function () {
         return [{
-          type: _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_3__["ArticleService"]
+          type: _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_4__["ArticleService"]
         }, {
-          type: _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"]
+          type: _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"]
         }, {
           type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]
         }, {
-          type: _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_5__["SubscribeService"]
+          type: _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_6__["SubscribeService"]
         }, {
-          type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialog"]
+          type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__["MatDialog"]
         }];
       }, null);
     })();
@@ -1575,7 +1731,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee3() {
-            var _this7 = this;
+            var _this8 = this;
 
             return regeneratorRuntime.wrap(function _callee3$(_context3) {
               while (1) {
@@ -1583,10 +1739,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 0:
                     _context3.next = 2;
                     return this.authService.login(this.myForm.value.login, this.myForm.value.password).then(function (response) {
-                      return _this7.router.navigate(['adminPanel/AddingPanel']);
+                      return _this8.router.navigate(['adminPanel/AddingPanel']);
                     })["catch"](function (er) {
                       console.log(er);
-                      _this7.serverError = er.message;
+                      _this8.serverError = er.message;
                     });
 
                   case 2:
@@ -2167,6 +2323,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
     /*! ./MatDialog/dialog-update/dialog-update.component */
     "./src/app/MatDialog/dialog-update/dialog-update.component.ts");
+    /* harmony import */
+
+
+    var _MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
+    /*! ./MatDialog/dialog-delele/dialog-delele.component */
+    "./src/app/MatDialog/dialog-delele/dialog-delele.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -2188,7 +2350,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _slider_slider_component__WEBPACK_IMPORTED_MODULE_4__["SliderComponent"], _blogs_blogs_component__WEBPACK_IMPORTED_MODULE_12__["BlogsComponent"], _nav_nav_component__WEBPACK_IMPORTED_MODULE_18__["NavComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__["FooterComponent"], _about_about_component__WEBPACK_IMPORTED_MODULE_20__["AboutComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_21__["HomeComponent"], _content_page_content_page_component__WEBPACK_IMPORTED_MODULE_23__["ContentPageComponent"], _item_item_component__WEBPACK_IMPORTED_MODULE_24__["ItemComponent"], _admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_25__["AdminPanelComponent"], _admin_sign_in_admin_sign_in_component__WEBPACK_IMPORTED_MODULE_28__["AdminSignInComponent"], _subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_33__["SubscribeComponent"], _MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_35__["DialogUpdateComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _slider_slider_component__WEBPACK_IMPORTED_MODULE_4__["SliderComponent"], _blogs_blogs_component__WEBPACK_IMPORTED_MODULE_12__["BlogsComponent"], _nav_nav_component__WEBPACK_IMPORTED_MODULE_18__["NavComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__["FooterComponent"], _about_about_component__WEBPACK_IMPORTED_MODULE_20__["AboutComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_21__["HomeComponent"], _content_page_content_page_component__WEBPACK_IMPORTED_MODULE_23__["ContentPageComponent"], _item_item_component__WEBPACK_IMPORTED_MODULE_24__["ItemComponent"], _admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_25__["AdminPanelComponent"], _admin_sign_in_admin_sign_in_component__WEBPACK_IMPORTED_MODULE_28__["AdminSignInComponent"], _subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_33__["SubscribeComponent"], _MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_35__["DialogUpdateComponent"], _MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_36__["DialogDeleleComponent"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_10__["FormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_8__["MatSidenavModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_11__["MatDialogModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_9__["MatCheckboxModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_13__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_14__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_15__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_29__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_17__["MatListModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_10__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_26__["HttpClientModule"], _agm_core__WEBPACK_IMPORTED_MODULE_27__["AgmCoreModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_30__["AngularFireModule"]]
       });
     })();
@@ -2199,7 +2361,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _slider_slider_component__WEBPACK_IMPORTED_MODULE_4__["SliderComponent"], _blogs_blogs_component__WEBPACK_IMPORTED_MODULE_12__["BlogsComponent"], _nav_nav_component__WEBPACK_IMPORTED_MODULE_18__["NavComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__["FooterComponent"], _about_about_component__WEBPACK_IMPORTED_MODULE_20__["AboutComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_21__["HomeComponent"], _content_page_content_page_component__WEBPACK_IMPORTED_MODULE_23__["ContentPageComponent"], _item_item_component__WEBPACK_IMPORTED_MODULE_24__["ItemComponent"], _admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_25__["AdminPanelComponent"], _admin_sign_in_admin_sign_in_component__WEBPACK_IMPORTED_MODULE_28__["AdminSignInComponent"], _subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_33__["SubscribeComponent"], _MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_35__["DialogUpdateComponent"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _slider_slider_component__WEBPACK_IMPORTED_MODULE_4__["SliderComponent"], _blogs_blogs_component__WEBPACK_IMPORTED_MODULE_12__["BlogsComponent"], _nav_nav_component__WEBPACK_IMPORTED_MODULE_18__["NavComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__["FooterComponent"], _about_about_component__WEBPACK_IMPORTED_MODULE_20__["AboutComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_21__["HomeComponent"], _content_page_content_page_component__WEBPACK_IMPORTED_MODULE_23__["ContentPageComponent"], _item_item_component__WEBPACK_IMPORTED_MODULE_24__["ItemComponent"], _admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_25__["AdminPanelComponent"], _admin_sign_in_admin_sign_in_component__WEBPACK_IMPORTED_MODULE_28__["AdminSignInComponent"], _subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_33__["SubscribeComponent"], _MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_35__["DialogUpdateComponent"], _MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_36__["DialogDeleleComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_10__["FormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_8__["MatSidenavModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_11__["MatDialogModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_9__["MatCheckboxModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_13__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_14__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_15__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_29__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_17__["MatListModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_10__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_26__["HttpClientModule"], _agm_core__WEBPACK_IMPORTED_MODULE_27__["AgmCoreModule"].forRoot({
             apiKey: "AIzaSyBnhupVdK_Taq6alpihcms3mQAVYMTBNbE"
           }), _angular_fire__WEBPACK_IMPORTED_MODULE_30__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_31__["environment"].firebase)],
@@ -2334,11 +2496,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(BlogsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this8 = this;
+          var _this9 = this;
 
           this.articleService.getArticles().subscribe(function (result) {
-            _this8.articles = result;
-            console.log(_this8.articles);
+            _this9.articles = result;
+            console.log(_this9.articles);
           });
         }
       }]);
@@ -2513,10 +2675,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ContentPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this9 = this;
+          var _this10 = this;
 
           this.articlesServise.getArticles().subscribe(function (result) {
-            return _this9.articles = result;
+            return _this10.articles = result;
           });
         }
       }]);
@@ -2903,13 +3065,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ItemComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this10 = this;
+          var _this11 = this;
 
           this.activateRoute.params.subscribe(function (result) {
-            return _this10.id = result["id"];
+            return _this11.id = result["id"];
           });
           this.articleService.getArticlesByID(this.id).subscribe(function (result) {
-            return _this10.item = result;
+            return _this11.item = result;
           });
         }
       }]);
@@ -3487,10 +3649,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SliderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this11 = this;
+          var _this12 = this;
 
           this.imagesService.getImages().subscribe(function (result) {
-            return _this11.images = result;
+            return _this12.images = result;
           });
         }
       }]);
@@ -3738,14 +3900,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addSubscriber",
         value: function addSubscriber() {
-          var _this12 = this;
+          var _this13 = this;
 
           this.subscribeService.addSubsriber(this.subscribeForm.value).subscribe(function (data) {
-            _this12.done = true;
+            _this13.done = true;
           }, function (error) {
             console.log(error);
-            _this12.serverError = error.message;
-            _this12.done = false;
+            _this13.serverError = error.message;
+            _this13.done = false;
           });
         }
       }]);

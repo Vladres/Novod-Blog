@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
 import { SubscribeService, SubsriberOfMyBlog } from '../Services/Subscribe/subscribe.service';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogUpdateComponent } from '../MatDialog/dialog-update/dialog-update.component';
+import { DialogDeleleComponent } from '../MatDialog/dialog-delele/dialog-delele.component';
+import { log } from 'util';
 
 @Component({
   selector: 'app-admin-panel',
@@ -42,7 +44,7 @@ export class AdminPanelComponent implements OnInit {
     this.subscribeService.getSubsribers().subscribe((data: SubsriberOfMyBlog[]) => { this.subscribers = data })
   }
 
-  openDialog(article: Article): void {
+  openDialogCreate(article: Article): void {
     const dialogRef = this.dialog.open(DialogUpdateComponent, {
       width: '30%',
       data: article
@@ -51,6 +53,19 @@ export class AdminPanelComponent implements OnInit {
     dialogRef.afterClosed().subscribe((result: Article) => {
       if (result)
         this.articleService.updateArticle(result).subscribe(data => { this.loadArticle()})
+    });
+  }
+
+  openDialogDelete(idOfElement: number): void {
+    const dialogRef = this.dialog.open(DialogDeleleComponent, {
+      width: '30%',
+      data: { id: idOfElement }
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result)
+        this.delete(result.id)
+      console.log(result.id);
     });
   }
 
