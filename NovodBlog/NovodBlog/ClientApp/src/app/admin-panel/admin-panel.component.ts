@@ -69,8 +69,7 @@ export class AdminPanelComponent implements OnInit {
   }
 
   loadArticle() {
-    this.articleService.getArticles()
-      .subscribe((data: Article[]) => this.articles = data);
+    this.articleService.getArticles().subscribe((data: Article[]) => this.articles = data);
   }
 
   loadSubscriber() {
