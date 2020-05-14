@@ -643,8 +643,7 @@ class AdminPanelComponent {
         });
     }
     loadArticle() {
-        this.articleService.getArticles()
-            .subscribe((data) => this.articles = data);
+        this.articleService.getArticles().subscribe((data) => this.articles = data);
     }
     loadSubscriber() {
         this.subscribeService.getSubsribers().subscribe((data) => { this.subscribers = data; });
