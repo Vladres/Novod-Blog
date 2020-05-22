@@ -14,7 +14,6 @@ export class AuthService {
 
   constructor(private afAuth: AngularFireAuth, private afs: AngularFirestore) {
     this.user$ = this.afAuth.authState.pipe(      switchMap(user => {        if (user) {          this.userDetails = user;          return of(user);        } else {          this.userDetails = null;          return of(null);        }      })    );
-
   }
 
   public async login(email: string, password: string) {

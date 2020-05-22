@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="d-flex align-content-center justify-content-center p-2">
         <div class="Blogs border  ">
-          <div *ngIf="item" class="shadow p-3 mb-5 bg-white rounded">
+          <div *ngIf="item" class="shadow p-3 mb-5 bg-white rounded" @EnterItem>
             <img class="MainBlogImage" src="{{item.imgSource}}" alt="">
             <div class="Text p-3 d-flex flex-column">
               <h1 class="Title m-1 p-1 ">{{item.title}}</h1>
