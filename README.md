@@ -6,6 +6,7 @@
 * npm --version    `Версия npm: 6.13.4`
 * ng --version     `Версия Angular CLI: 9.1.4`
 ## Install packages
+* `git clone https://github.com/Vladres/Novod-Blog.git`
 * `cd NovodBlog/NovodBlog/ClientApp` `npm install` ;
 
 ## Open in localhost
