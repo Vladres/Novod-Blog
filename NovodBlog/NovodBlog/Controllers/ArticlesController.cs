@@ -13,67 +13,80 @@ namespace NovodBlog.Controllers
     [ApiController]
     public class ArticlesController : ControllerBase
     {
-        DB db;
+        private readonly DB _db;
         public ArticlesController(DB context)
         {
-            db = context;
+            _db = context;
         }
 
-        // GET: api/Articles
+        #region GET: api/Articles
+        //GET: api/Articles
         [HttpGet("")]
         public IEnumerable<Article> Get()
         {
-            return db.Articles.ToList();
+            return _db.Articles.ToList();
         }
 
+        #endregion
+
+        #region GET: api/Articles/{id}
         // GET: api/Articles/5
         [HttpGet("{id}")]
         public Article Get(int id)
         {
-            Article article = db.Articles.FirstOrDefault(x => x.id == id);
+            Article article = _db.Articles.FirstOrDefault(x => x.id == id);
             return article;
         }
 
+        #endregion
+
+        #region POST: api/Articles
         // POST: api/Articles
         [HttpPost("")]
         public  IActionResult Post([FromBody] Article value)
         {
             if (ModelState.IsValid)
             {
-                db.Articles.Add(value);
-                db.SaveChanges();
+                _db.Articles.Add(value);
+                _db.SaveChanges();
                 return Ok(value);
             }
             return BadRequest(ModelState);
         }
+        #endregion
 
+        # region PUT: api/Articles/ 
         // PUT: api/Articles/   
         [HttpPut("")]
         public IActionResult Put([FromBody] Article value)
         {
             if (ModelState.IsValid)
             {
-                db.Update(value);
-                db.SaveChanges();
+                _db.Update(value);
+                _db.SaveChanges();
                 return Ok(value);
             }
             return BadRequest(ModelState);
         }
+        #endregion
 
+        #region DELETE: api/Articles/{id}
         // DELETE: api/Articles/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            Article product = db.Articles.FirstOrDefault(x => x.id == id);
+            Article product = _db.Articles.FirstOrDefault(x => x.id == id);
             if (product != null)
             {
-                db.Articles.Remove(product);
-                db.SaveChanges();
+                _db.Articles.Remove(product);
+                _db.SaveChanges();
             }
             return Ok(product);
         }
 
-        //public async Task<IActionResult> SendMessages()
+        #endregion
+
+        //public async Task<IActionResult> SendMessages() // send message by gmail to client
         //{
         //    EmailService emailService = new EmailService();
         //    List<Subscribers> emailList = db.Subscribers.ToList();

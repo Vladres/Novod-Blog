@@ -25,7 +25,7 @@ namespace NovodBlog
         public void ConfigureServices(IServiceCollection services)
         {
             //Database
-            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+            var connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<DB>(options => options.UseSqlServer(connectionString));
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddControllersWithViews();
