@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: "content/item/:id", component: ItemComponent },
   { path: 'adminPanel', component: AdminSignInComponent },
   { path: 'adminPanel/AddingPanel', component: AdminPanelComponent, canActivate: [AngularFireAuthGuard] },
-  { path: '**', redirectTo: '/', pathMatch : "full"}
+  //{ path: '**', redirectTo: '/', pathMatch : "full"}
 ];
 
 @NgModule({

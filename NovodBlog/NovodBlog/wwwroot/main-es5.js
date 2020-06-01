@@ -1995,10 +1995,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       path: 'adminPanel/AddingPanel',
       component: _admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_6__["AdminPanelComponent"],
       canActivate: [_angular_fire_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AngularFireAuthGuard"]]
-    }, {
-      path: '**',
-      redirectTo: '/',
-      pathMatch: "full"
     }];
 
     var AppRoutingModule = function AppRoutingModule() {

@@ -901,7 +901,6 @@ const routes = [
     { path: "content/item/:id", component: _item_item_component__WEBPACK_IMPORTED_MODULE_5__["ItemComponent"] },
     { path: 'adminPanel', component: _admin_sign_in_admin_sign_in_component__WEBPACK_IMPORTED_MODULE_7__["AdminSignInComponent"] },
     { path: 'adminPanel/AddingPanel', component: _admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_6__["AdminPanelComponent"], canActivate: [_angular_fire_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AngularFireAuthGuard"]] },
-    { path: '**', redirectTo: '/', pathMatch: "full" }
 ];
 class AppRoutingModule {
 }

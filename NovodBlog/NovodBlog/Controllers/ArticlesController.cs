@@ -20,7 +20,7 @@ namespace NovodBlog.Controllers
         }
 
         // GET: api/Articles
-        [HttpGet]
+        [HttpGet("")]
         public IEnumerable<Article> Get()
         {
             return db.Articles.ToList();
@@ -35,12 +35,11 @@ namespace NovodBlog.Controllers
         }
 
         // POST: api/Articles
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Article value)
+        [HttpPost("")]
+        public  IActionResult Post([FromBody] Article value)
         {
             if (ModelState.IsValid)
             {
-                await SendMessages();
                 db.Articles.Add(value);
                 db.SaveChanges();
                 return Ok(value);
@@ -49,7 +48,7 @@ namespace NovodBlog.Controllers
         }
 
         // PUT: api/Articles/   
-        [HttpPut]
+        [HttpPut("")]
         public IActionResult Put([FromBody] Article value)
         {
             if (ModelState.IsValid)
@@ -74,16 +73,16 @@ namespace NovodBlog.Controllers
             return Ok(product);
         }
 
+        //public async Task<IActionResult> SendMessages()
+        //{
+        //    EmailService emailService = new EmailService();
+        //    List<Subscribers> emailList = db.Subscribers.ToList();
+        //    foreach (Subscribers tmp in emailList)
+        //    {
+        //        await emailService.SendEmailAsync(tmp.email, "Novod blog News", $"<div>{tmp.name_of_subscriber}<br>Зайди на сайт там новинки<div>").ConfigureAwait(true);
+        //    }
+        //    return RedirectToAction("Index");
+        //}
 
-        public async Task<IActionResult> SendMessages()
-        {
-            EmailService emailService = new EmailService();
-            List<Subscribers> emailList = db.Subscribers.ToList();
-            foreach (Subscribers tmp in emailList)
-            {
-                await emailService.SendEmailAsync(tmp.email , "Novod blog News", $"<div>{tmp.name_of_subscriber}<br>Зайди на сайт там новинки<div>").ConfigureAwait(true);
-            }
-            return RedirectToAction("Index");
-        }
     }
 }
