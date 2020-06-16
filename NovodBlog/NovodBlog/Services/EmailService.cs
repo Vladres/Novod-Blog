@@ -26,7 +26,6 @@ namespace NovodBlog.Services
                 await client.ConnectAsync("smtp.gmail.com", 465,true);
                 await client.AuthenticateAsync("novodblog@gmail.com", "vladres1121");
                 await client.SendAsync(emailMessage);
-
                 await client.DisconnectAsync(true);
             }
         }

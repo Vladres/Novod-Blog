@@ -37,6 +37,7 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
 import { SubscribeService } from './Services/Subscribe/subscribe.service';
 import { DialogUpdateComponent } from './MatDialog/dialog-update/dialog-update.component';
 import { DialogDeleleComponent } from './MatDialog/dialog-delele/dialog-delele.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { DialogDeleleComponent } from './MatDialog/dialog-delele/dialog-delele.c
     SubscribeComponent,
     DialogUpdateComponent,
     DialogDeleleComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
