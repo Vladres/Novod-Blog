@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using NovodBlog.Models;
 using System.IO;
 using Microsoft.OpenApi.Models;
+using NovodBlog.Services;
 
 namespace NovodBlog
 {
@@ -29,6 +30,9 @@ namespace NovodBlog
             services.AddDbContext<DB>(options => options.UseSqlServer(connectionString));
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddControllersWithViews();
+
+            //Services
+            services.AddTransient<EmailService>();
 
             //Swagger
             services.AddSwaggerGen();

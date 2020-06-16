@@ -4,12 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using MimeKit;
 using MailKit.Net.Smtp;
+using Microsoft.AspNetCore.Mvc;
+using NovodBlog.Models;
 
 namespace NovodBlog.Services
 {
     public class EmailService
     {
-        public async Task SendEmailAsync(string email, string subject, string message)
+        private async Task SendEmailAsync(string email, string subject, string message)
         {
             var emailMessage = new MimeMessage();
 
@@ -29,5 +31,16 @@ namespace NovodBlog.Services
                 await client.DisconnectAsync(true);
             }
         }
+
+        public async Task SendMessages(DB _db) // send message by gmail to client
+        {
+            EmailService emailService = new EmailService();
+            List<Subscribers> emailList = _db.Subscribers.ToList();
+            foreach (Subscribers tmp in emailList)
+            {
+                await emailService.SendEmailAsync(tmp.email, "Novod blog News", $"<div>{tmp.name_of_subscriber}<br>Зайди на сайт там новинки<div>").ConfigureAwait(true);
+            }
+        }
+
     }
 }

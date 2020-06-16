@@ -14,9 +14,11 @@ namespace NovodBlog.Controllers
     public class ArticlesController : ControllerBase
     {
         private readonly DB _db;
-        public ArticlesController(DB context)
+        private readonly EmailService _em;
+        public ArticlesController(DB context,EmailService emailService)
         {
             _db = context;
+            _em = emailService;
         }
 
         #region GET: api/Articles
@@ -43,12 +45,13 @@ namespace NovodBlog.Controllers
         #region POST: api/Articles
         // POST: api/Articles
         [HttpPost("")]
-        public  IActionResult Post([FromBody] Article value)
+        public async Task<IActionResult> Post([FromBody] Article value)
         {
             if (ModelState.IsValid)
             {
                 _db.Articles.Add(value);
                 _db.SaveChanges();
+                await _em.SendMessages(_db);
                 return Ok(value);
             }
             return BadRequest(ModelState);
@@ -86,16 +89,6 @@ namespace NovodBlog.Controllers
 
         #endregion
 
-        //public async Task<IActionResult> SendMessages() // send message by gmail to client
-        //{
-        //    EmailService emailService = new EmailService();
-        //    List<Subscribers> emailList = db.Subscribers.ToList();
-        //    foreach (Subscribers tmp in emailList)
-        //    {
-        //        await emailService.SendEmailAsync(tmp.email, "Novod blog News", $"<div>{tmp.name_of_subscriber}<br>Зайди на сайт там новинки<div>").ConfigureAwait(true);
-        //    }
-        //    return RedirectToAction("Index");
-        //}
-
+        
     }
 }
