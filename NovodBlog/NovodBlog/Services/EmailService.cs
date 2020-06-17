@@ -35,7 +35,7 @@ namespace NovodBlog.Services
         public async Task SendMessages(DB _db) // send message by gmail to client
         {
             EmailService emailService = new EmailService();
-            List<Subscribers> emailList = _db.Subscribers.ToList();
+            List<Subscribers> emailList = _db.Subscribers.Distinct().ToList();
             foreach (Subscribers tmp in emailList)
             {
                 await emailService.SendEmailAsync(tmp.email, "Novod blog News", $"<div>{tmp.name_of_subscriber}<br>Зайди на сайт там новинки<div>").ConfigureAwait(true);
