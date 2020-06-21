@@ -300,12 +300,93 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/Services/ImageSliderService/images.service.ts":
+  /*!***************************************************************!*\
+    !*** ./src/app/Services/ImageSliderService/images.service.ts ***!
+    \***************************************************************/
+
+  /*! exports provided: ImagesService */
+
+  /***/
+  function srcAppServicesImageSliderServiceImagesServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ImagesService", function () {
+      return ImagesService;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
+
+    var ImagesService =
+    /*#__PURE__*/
+    function () {
+      function ImagesService() {
+        _classCallCheck(this, ImagesService);
+
+        this.images = ["https://i.pinimg.com/originals/0e/9e/88/0e9e8812f01f82650833264673bf51ed.jpg", "https://wallpapercave.com/wp/wp2394184.jpg", "https://images.wallpaperscraft.ru/image/sportkar_avtomobil_doroga_168267_3840x2160.jpg"];
+      }
+
+      _createClass(ImagesService, [{
+        key: "getImages",
+        value: function getImages() {
+          return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(this.images);
+        }
+      }, {
+        key: "addImage",
+        value: function addImage(value) {
+          this.images.push(value);
+        }
+      }]);
+
+      return ImagesService;
+    }();
+
+    ImagesService.ɵfac = function ImagesService_Factory(t) {
+      return new (t || ImagesService)();
+    };
+
+    ImagesService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      token: ImagesService,
+      factory: ImagesService.ɵfac,
+      providedIn: 'root'
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ImagesService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+          providedIn: 'root'
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
   "./src/app/Services/Subscribe/subscribe.service.ts":
   /*!*********************************************************!*\
     !*** ./src/app/Services/Subscribe/subscribe.service.ts ***!
     \*********************************************************/
 
-  /*! exports provided: SubscribeService, SubsriberOfMyBlog */
+  /*! exports provided: SubscribeService */
 
   /***/
   function srcAppServicesSubscribeSubscribeServiceTs(module, __webpack_exports__, __webpack_require__) {
@@ -317,12 +398,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     __webpack_require__.d(__webpack_exports__, "SubscribeService", function () {
       return SubscribeService;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "SubsriberOfMyBlog", function () {
-      return SubsriberOfMyBlog;
     });
     /* harmony import */
 
@@ -398,91 +473,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         return [{
           type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
         }];
-      }, null);
-    })();
-
-    var SubsriberOfMyBlog = function SubsriberOfMyBlog(id_subscriber, email, name_of_subscriber) {
-      _classCallCheck(this, SubsriberOfMyBlog);
-    };
-    /***/
-
-  },
-
-  /***/
-  "./src/app/Services/images.service.ts":
-  /*!********************************************!*\
-    !*** ./src/app/Services/images.service.ts ***!
-    \********************************************/
-
-  /*! exports provided: ImagesService */
-
-  /***/
-  function srcAppServicesImagesServiceTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "ImagesService", function () {
-      return ImagesService;
-    });
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-    /* harmony import */
-
-
-    var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! rxjs */
-    "./node_modules/rxjs/_esm2015/index.js");
-
-    var ImagesService =
-    /*#__PURE__*/
-    function () {
-      function ImagesService() {
-        _classCallCheck(this, ImagesService);
-
-        this.images = ["https://i.pinimg.com/originals/0e/9e/88/0e9e8812f01f82650833264673bf51ed.jpg", "https://wallpapercave.com/wp/wp2394184.jpg", "https://images.wallpaperscraft.ru/image/sportkar_avtomobil_doroga_168267_3840x2160.jpg"];
-      }
-
-      _createClass(ImagesService, [{
-        key: "getImages",
-        value: function getImages() {
-          return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(this.images);
-        }
-      }, {
-        key: "addImage",
-        value: function addImage(value) {
-          this.images.push(value);
-        }
-      }]);
-
-      return ImagesService;
-    }();
-
-    ImagesService.ɵfac = function ImagesService_Factory(t) {
-      return new (t || ImagesService)();
-    };
-
-    ImagesService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
-      token: ImagesService,
-      factory: ImagesService.ɵfac,
-      providedIn: 'root'
-    });
-    /*@__PURE__*/
-
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ImagesService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
-        args: [{
-          providedIn: 'root'
-        }]
-      }], function () {
-        return [];
       }, null);
     })();
     /***/
@@ -918,27 +908,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _Services_images_service__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
-    /*! ./Services/images.service */
-    "./src/app/Services/images.service.ts");
-    /* harmony import */
-
-
-    var _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
+    var _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
     /*! ./Services/Auth/auth.service */
     "./src/app/Services/Auth/auth.service.ts");
     /* harmony import */
 
 
-    var _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
+    var _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
     /*! ./Services/Subscribe/subscribe.service */
     "./src/app/Services/Subscribe/subscribe.service.ts");
     /* harmony import */
 
 
-    var _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(
+    var _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
     /*! ./main/admin/admin.module */
     "./src/app/main/admin/admin.module.ts");
+    /* harmony import */
+
+
+    var _Services_ImageSliderService_images_service__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(
+    /*! ./Services/ImageSliderService/images.service */
+    "./src/app/Services/ImageSliderService/images.service.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -952,8 +942,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       factory: function AppModule_Factory(t) {
         return new (t || AppModule)();
       },
-      providers: [_Services_images_service__WEBPACK_IMPORTED_MODULE_34__["ImagesService"], _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_33__["ArticleService"], _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_35__["AuthService"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"], _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_36__["SubscribeService"]],
-      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_19__["AppRoutingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModule"], _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_37__["AdminModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_18__["BrowserAnimationsModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialogModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_15__["MatCheckboxModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_9__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_2__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_12__["MatListModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"], _agm_core__WEBPACK_IMPORTED_MODULE_17__["AgmCoreModule"].forRoot({
+      providers: [_Services_ImageSliderService_images_service__WEBPACK_IMPORTED_MODULE_37__["ImagesService"], _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_33__["ArticleService"], _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_34__["AuthService"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"], _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_35__["SubscribeService"]],
+      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_19__["AppRoutingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModule"], _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_36__["AdminModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_18__["BrowserAnimationsModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialogModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_15__["MatCheckboxModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_9__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_2__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_12__["MatListModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"], _agm_core__WEBPACK_IMPORTED_MODULE_17__["AgmCoreModule"].forRoot({
         apiKey: "AIzaSyBnhupVdK_Taq6alpihcms3mQAVYMTBNbE"
       }), _angular_fire__WEBPACK_IMPORTED_MODULE_3__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_21__["environment"].firebase)]]
     });
@@ -961,7 +951,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
         declarations: [_app_component__WEBPACK_IMPORTED_MODULE_20__["AppComponent"], _main_slider_slider_component__WEBPACK_IMPORTED_MODULE_22__["SliderComponent"], _main_blogs_blogs_component__WEBPACK_IMPORTED_MODULE_7__["BlogsComponent"], _main_nav_nav_component__WEBPACK_IMPORTED_MODULE_23__["NavComponent"], _main_footer_footer_component__WEBPACK_IMPORTED_MODULE_24__["FooterComponent"], _main_about_about_component__WEBPACK_IMPORTED_MODULE_25__["AboutComponent"], _main_home_home_component__WEBPACK_IMPORTED_MODULE_26__["HomeComponent"], _main_content_page_content_page_component__WEBPACK_IMPORTED_MODULE_27__["ContentPageComponent"], _main_item_item_component__WEBPACK_IMPORTED_MODULE_28__["ItemComponent"], _main_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_29__["SubscribeComponent"], _main_MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_30__["DialogUpdateComponent"], _main_MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_31__["DialogDeleleComponent"], _main_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_32__["PageNotFoundComponent"]],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_19__["AppRoutingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModule"], _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_37__["AdminModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_18__["BrowserAnimationsModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialogModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_15__["MatCheckboxModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_9__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_2__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_12__["MatListModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"], _agm_core__WEBPACK_IMPORTED_MODULE_17__["AgmCoreModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_3__["AngularFireModule"]]
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_19__["AppRoutingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModule"], _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_36__["AdminModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_18__["BrowserAnimationsModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialogModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_15__["MatCheckboxModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_9__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_2__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_12__["MatListModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"], _agm_core__WEBPACK_IMPORTED_MODULE_17__["AgmCoreModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_3__["AngularFireModule"]]
       });
     })();
     /*@__PURE__*/
@@ -972,10 +962,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
           declarations: [_app_component__WEBPACK_IMPORTED_MODULE_20__["AppComponent"], _main_slider_slider_component__WEBPACK_IMPORTED_MODULE_22__["SliderComponent"], _main_blogs_blogs_component__WEBPACK_IMPORTED_MODULE_7__["BlogsComponent"], _main_nav_nav_component__WEBPACK_IMPORTED_MODULE_23__["NavComponent"], _main_footer_footer_component__WEBPACK_IMPORTED_MODULE_24__["FooterComponent"], _main_about_about_component__WEBPACK_IMPORTED_MODULE_25__["AboutComponent"], _main_home_home_component__WEBPACK_IMPORTED_MODULE_26__["HomeComponent"], _main_content_page_content_page_component__WEBPACK_IMPORTED_MODULE_27__["ContentPageComponent"], _main_item_item_component__WEBPACK_IMPORTED_MODULE_28__["ItemComponent"], _main_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_29__["SubscribeComponent"], _main_MatDialog_dialog_update_dialog_update_component__WEBPACK_IMPORTED_MODULE_30__["DialogUpdateComponent"], _main_MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_31__["DialogDeleleComponent"], _main_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_32__["PageNotFoundComponent"]],
-          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_19__["AppRoutingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModule"], _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_37__["AdminModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_18__["BrowserAnimationsModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialogModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_15__["MatCheckboxModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_9__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_2__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_12__["MatListModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"], _agm_core__WEBPACK_IMPORTED_MODULE_17__["AgmCoreModule"].forRoot({
+          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_19__["AppRoutingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModule"], _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_36__["AdminModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_18__["BrowserAnimationsModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialogModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_15__["MatCheckboxModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_9__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_2__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_12__["MatListModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"], _agm_core__WEBPACK_IMPORTED_MODULE_17__["AgmCoreModule"].forRoot({
             apiKey: "AIzaSyBnhupVdK_Taq6alpihcms3mQAVYMTBNbE"
           }), _angular_fire__WEBPACK_IMPORTED_MODULE_3__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_21__["environment"].firebase)],
-          providers: [_Services_images_service__WEBPACK_IMPORTED_MODULE_34__["ImagesService"], _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_33__["ArticleService"], _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_35__["AuthService"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"], _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_36__["SubscribeService"]],
+          providers: [_Services_ImageSliderService_images_service__WEBPACK_IMPORTED_MODULE_37__["ImagesService"], _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_33__["ArticleService"], _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_34__["AuthService"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"], _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_35__["SubscribeService"]],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_20__["AppComponent"]]
         }]
       }], null, null);
@@ -3864,9 +3854,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _Services_images_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ../../Services/images.service */
-    "./src/app/Services/images.service.ts");
+    var _Services_ImageSliderService_images_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../../Services/ImageSliderService/images.service */
+    "./src/app/Services/ImageSliderService/images.service.ts");
     /* harmony import */
 
 
@@ -3946,7 +3936,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }();
 
     SliderComponent.ɵfac = function SliderComponent_Factory(t) {
-      return new (t || SliderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_images_service__WEBPACK_IMPORTED_MODULE_2__["ImagesService"]));
+      return new (t || SliderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_ImageSliderService_images_service__WEBPACK_IMPORTED_MODULE_2__["ImagesService"]));
     };
 
     SliderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -4003,7 +3993,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }]
       }], function () {
         return [{
-          type: _Services_images_service__WEBPACK_IMPORTED_MODULE_2__["ImagesService"]
+          type: _Services_ImageSliderService_images_service__WEBPACK_IMPORTED_MODULE_2__["ImagesService"]
         }];
       }, null);
     })();

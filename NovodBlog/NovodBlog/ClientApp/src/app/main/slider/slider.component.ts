@@ -1,6 +1,7 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { trigger, state, transition, animate, style, query, stagger, group } from '@angular/animations';
-import { ImagesService } from '../../Services/images.service';
+import { ImagesService } from '../../Services/ImageSliderService/images.service';
+
 
 @Component({
   selector: 'app-slider',

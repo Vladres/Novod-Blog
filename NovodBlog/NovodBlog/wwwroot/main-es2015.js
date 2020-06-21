@@ -140,17 +140,56 @@ AuthService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjec
 
 /***/ }),
 
+/***/ "./src/app/Services/ImageSliderService/images.service.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/Services/ImageSliderService/images.service.ts ***!
+  \***************************************************************/
+/*! exports provided: ImagesService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImagesService", function() { return ImagesService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+
+
+
+class ImagesService {
+    constructor() {
+        this.images = ["https://i.pinimg.com/originals/0e/9e/88/0e9e8812f01f82650833264673bf51ed.jpg",
+            "https://wallpapercave.com/wp/wp2394184.jpg",
+            "https://images.wallpaperscraft.ru/image/sportkar_avtomobil_doroga_168267_3840x2160.jpg"];
+    }
+    getImages() {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(this.images);
+    }
+    addImage(value) {
+        this.images.push(value);
+    }
+}
+ImagesService.ɵfac = function ImagesService_Factory(t) { return new (t || ImagesService)(); };
+ImagesService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ImagesService, factory: ImagesService.ɵfac, providedIn: 'root' });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ImagesService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
 /***/ "./src/app/Services/Subscribe/subscribe.service.ts":
 /*!*********************************************************!*\
   !*** ./src/app/Services/Subscribe/subscribe.service.ts ***!
   \*********************************************************/
-/*! exports provided: SubscribeService, SubsriberOfMyBlog */
+/*! exports provided: SubscribeService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SubscribeService", function() { return SubscribeService; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SubsriberOfMyBlog", function() { return SubsriberOfMyBlog; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
 
@@ -185,49 +224,6 @@ SubscribeService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
                 providedIn: 'root'
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }]; }, null); })();
-class SubsriberOfMyBlog {
-    constructor(id_subscriber, email, name_of_subscriber) { }
-}
-
-
-/***/ }),
-
-/***/ "./src/app/Services/images.service.ts":
-/*!********************************************!*\
-  !*** ./src/app/Services/images.service.ts ***!
-  \********************************************/
-/*! exports provided: ImagesService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImagesService", function() { return ImagesService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-
-
-
-class ImagesService {
-    constructor() {
-        this.images = ["https://i.pinimg.com/originals/0e/9e/88/0e9e8812f01f82650833264673bf51ed.jpg",
-            "https://wallpapercave.com/wp/wp2394184.jpg",
-            "https://images.wallpaperscraft.ru/image/sportkar_avtomobil_doroga_168267_3840x2160.jpg"];
-    }
-    getImages() {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(this.images);
-    }
-    addImage(value) {
-        this.images.push(value);
-    }
-}
-ImagesService.ɵfac = function ImagesService_Factory(t) { return new (t || ImagesService)(); };
-ImagesService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ImagesService, factory: ImagesService.ɵfac, providedIn: 'root' });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ImagesService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
-        args: [{
-                providedIn: 'root'
-            }]
-    }], function () { return []; }, null); })();
 
 
 /***/ }),
@@ -368,10 +364,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _main_MatDialog_dialog_delele_dialog_delele_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./main/MatDialog/dialog-delele/dialog-delele.component */ "./src/app/main/MatDialog/dialog-delele/dialog-delele.component.ts");
 /* harmony import */ var _main_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./main/page-not-found/page-not-found.component */ "./src/app/main/page-not-found/page-not-found.component.ts");
 /* harmony import */ var _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./Services/Articles/article.service */ "./src/app/Services/Articles/article.service.ts");
-/* harmony import */ var _Services_images_service__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./Services/images.service */ "./src/app/Services/images.service.ts");
-/* harmony import */ var _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./Services/Auth/auth.service */ "./src/app/Services/Auth/auth.service.ts");
-/* harmony import */ var _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./Services/Subscribe/subscribe.service */ "./src/app/Services/Subscribe/subscribe.service.ts");
-/* harmony import */ var _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./main/admin/admin.module */ "./src/app/main/admin/admin.module.ts");
+/* harmony import */ var _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./Services/Auth/auth.service */ "./src/app/Services/Auth/auth.service.ts");
+/* harmony import */ var _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./Services/Subscribe/subscribe.service */ "./src/app/Services/Subscribe/subscribe.service.ts");
+/* harmony import */ var _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./main/admin/admin.module */ "./src/app/main/admin/admin.module.ts");
+/* harmony import */ var _Services_ImageSliderService_images_service__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./Services/ImageSliderService/images.service */ "./src/app/Services/ImageSliderService/images.service.ts");
 
 
 
@@ -418,17 +414,17 @@ class AppModule {
 }
 AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_20__["AppComponent"]] });
 AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [
-        _Services_images_service__WEBPACK_IMPORTED_MODULE_34__["ImagesService"],
+        _Services_ImageSliderService_images_service__WEBPACK_IMPORTED_MODULE_37__["ImagesService"],
         _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_33__["ArticleService"],
-        _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_35__["AuthService"],
+        _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_34__["AuthService"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"],
-        _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_36__["SubscribeService"]
+        _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_35__["SubscribeService"]
     ], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_19__["AppRoutingModule"],
             _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModule"],
-            _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_37__["AdminModule"],
+            _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_36__["AdminModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_18__["BrowserAnimationsModule"],
             _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"],
             _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialogModule"],
@@ -463,7 +459,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_19__["AppRoutingModule"],
         _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModule"],
-        _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_37__["AdminModule"],
+        _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_36__["AdminModule"],
         _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_18__["BrowserAnimationsModule"],
         _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"],
         _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialogModule"],
@@ -500,7 +496,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"],
                     _app_routing_module__WEBPACK_IMPORTED_MODULE_19__["AppRoutingModule"],
                     _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModule"],
-                    _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_37__["AdminModule"],
+                    _main_admin_admin_module__WEBPACK_IMPORTED_MODULE_36__["AdminModule"],
                     _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_18__["BrowserAnimationsModule"],
                     _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"],
                     _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialogModule"],
@@ -520,11 +516,11 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _angular_fire__WEBPACK_IMPORTED_MODULE_3__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_21__["environment"].firebase)
                 ],
                 providers: [
-                    _Services_images_service__WEBPACK_IMPORTED_MODULE_34__["ImagesService"],
+                    _Services_ImageSliderService_images_service__WEBPACK_IMPORTED_MODULE_37__["ImagesService"],
                     _Services_Articles_article_service__WEBPACK_IMPORTED_MODULE_33__["ArticleService"],
-                    _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_35__["AuthService"],
+                    _Services_Auth_auth_service__WEBPACK_IMPORTED_MODULE_34__["AuthService"],
                     _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"],
-                    _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_36__["SubscribeService"]
+                    _Services_Subscribe_subscribe_service__WEBPACK_IMPORTED_MODULE_35__["SubscribeService"]
                 ],
                 bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_20__["AppComponent"]]
             }]
@@ -1857,7 +1853,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SliderComponent", function() { return SliderComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/__ivy_ngcc__/fesm2015/animations.js");
-/* harmony import */ var _Services_images_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Services/images.service */ "./src/app/Services/images.service.ts");
+/* harmony import */ var _Services_ImageSliderService_images_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Services/ImageSliderService/images.service */ "./src/app/Services/ImageSliderService/images.service.ts");
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
@@ -1895,7 +1891,7 @@ class SliderComponent {
         this.imagesService.getImages().subscribe(result => this.images = result);
     }
 }
-SliderComponent.ɵfac = function SliderComponent_Factory(t) { return new (t || SliderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_images_service__WEBPACK_IMPORTED_MODULE_2__["ImagesService"])); };
+SliderComponent.ɵfac = function SliderComponent_Factory(t) { return new (t || SliderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_Services_ImageSliderService_images_service__WEBPACK_IMPORTED_MODULE_2__["ImagesService"])); };
 SliderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SliderComponent, selectors: [["app-slider"]], decls: 2, vars: 2, consts: [[1, "containerSlider", 3, "interval"], [4, "ngFor", "ngForOf"], ["ngbSlide", "", "class", "ContainerForDivs carousel-item"], [1, "containerForImage"], ["alt", "slide...", 1, "imageSlider", 3, "src"], [1, "carousel-caption", "d-flex", "justify-content-center", "p-3"], [1, "text-center"], [1, "Title", "m-2"]], template: function SliderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ngb-carousel", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, SliderComponent_1_Template, 1, 0, undefined, 1);
@@ -1927,7 +1923,7 @@ SliderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
                     ])
                 ]
             }]
-    }], function () { return [{ type: _Services_images_service__WEBPACK_IMPORTED_MODULE_2__["ImagesService"] }]; }, null); })();
+    }], function () { return [{ type: _Services_ImageSliderService_images_service__WEBPACK_IMPORTED_MODULE_2__["ImagesService"] }]; }, null); })();
 
 
 /***/ }),

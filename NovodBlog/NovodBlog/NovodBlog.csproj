@@ -36,11 +36,13 @@
   <ItemGroup>
     <None Remove="ClientApp\src\app\app-routing.module.ts" />
     <None Remove="ClientApp\src\app\Models\Article.ts" />
+    <None Remove="ClientApp\src\app\Models\Subscriber.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\app-routing.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\Models\Article.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\Models\Subscriber.ts" />
   </ItemGroup>
 
   <ItemGroup>

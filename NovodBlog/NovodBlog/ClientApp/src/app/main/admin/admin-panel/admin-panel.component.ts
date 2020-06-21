@@ -5,8 +5,9 @@ import { DialogUpdateComponent } from '../../MatDialog/dialog-update/dialog-upda
 import { DialogDeleleComponent } from '../../MatDialog/dialog-delele/dialog-delele.component';
 import { ArticleService } from '../../../Services/Articles/article.service';
 import { AuthService } from '../../../Services/Auth/auth.service';
-import { SubsriberOfMyBlog, SubscribeService } from '../../../Services/Subscribe/subscribe.service';
+import { SubscribeService } from '../../../Services/Subscribe/subscribe.service';
 import { Article } from '../../../Models/Article';
+import { Subsriber } from '../../../Models/Subscriber';
 
 @Component({
   selector: 'app-admin-panel',
@@ -19,7 +20,7 @@ export class AdminPanelComponent implements OnInit {
   public done: boolean = false;
   public serverError: string;
   public articles: Article[] = [{ id: 1, title: "test", subText: "test", text: "test", imgSource: " " }];
-  public subscribers: SubsriberOfMyBlog[];
+  public subscribers: Subsriber[];
   public EditItem: Article;
 
 
@@ -72,7 +73,7 @@ export class AdminPanelComponent implements OnInit {
   }
 
   loadSubscriber() {
-    this.subscribeService.getSubsribers().subscribe((data: SubsriberOfMyBlog[]) => { this.subscribers = data })
+    this.subscribeService.getSubsribers().subscribe((data: Subsriber[]) => { this.subscribers = data })
   }
 
   save() {

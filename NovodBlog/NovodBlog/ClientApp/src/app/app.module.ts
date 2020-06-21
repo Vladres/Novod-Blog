@@ -36,10 +36,10 @@ import { DialogDeleleComponent } from './main/MatDialog/dialog-delele/dialog-del
 import { PageNotFoundComponent } from './main/page-not-found/page-not-found.component';
 
 import { ArticleService } from './Services/Articles/article.service';
-import { ImagesService } from './Services/images.service';
 import { AuthService } from './Services/Auth/auth.service';
 import { SubscribeService } from './Services/Subscribe/subscribe.service';
 import { AdminModule } from './main/admin/admin.module';
+import { ImagesService } from './Services/ImageSliderService/images.service';
 
 
 @NgModule({

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Subsriber } from '../../Models/Subscriber';
 
 @Injectable({
   providedIn: 'root'
@@ -19,11 +20,11 @@ export class SubscribeService {
     return this.http.get(this.url + "/" + id);
   }
 
-  addSubsriber(value: SubsriberOfMyBlog) {
+  addSubsriber(value: Subsriber) {
     return this.http.post(this.url, value);
   }
 
-  updateSubsriber(value: SubsriberOfMyBlog) {
+  updateSubsriber(value: Subsriber) {
     return this.http.put(this.url, value);
   }
 
@@ -34,9 +35,3 @@ export class SubscribeService {
 }
 
 
-export class SubsriberOfMyBlog {
-  constructor(
-    id_subscriber: number,
-    email: string,
-    name_of_subscriber: string) {}
-}
