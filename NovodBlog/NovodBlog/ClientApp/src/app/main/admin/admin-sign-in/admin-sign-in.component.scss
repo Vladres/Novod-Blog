@@ -1,0 +1,46 @@
+.Blog {
+  min-height: 72vh;
+  background-image: url("https://images.pexels.com/photos/36764/marguerite-daisy-beautiful-beauty.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.login-header {
+  background: #4CAF50;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+mat-label{
+    font-size:1.4rem;
+}
+
+form-control {
+  font-size: 1.4rem;
+}
+.Form {
+  max-width: 50%;
+}
+.example-form {
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.LoginBtn{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all ease;
+  transition: all  ease;
+  cursor: pointer;
+}
+

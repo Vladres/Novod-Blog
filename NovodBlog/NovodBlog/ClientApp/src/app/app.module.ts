@@ -1,43 +1,46 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { SliderComponent } from './slider/slider.component';
+import { MatInputModule } from '@angular/material/input';
+import { AngularFireModule } from '@angular/fire';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ImagesService } from './Services/images.service';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
-import { MatDialogModule} from '@angular/material/dialog';
-import { BlogsComponent } from './blogs/blogs.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { BlogsComponent } from './main/blogs/blogs.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { NavComponent } from './nav/nav.component';
-import { FooterComponent } from './footer/footer.component';
-import { AboutComponent } from "./about/about.component";
-import { HomeComponent } from './home/home.component';
-import { ArticleService } from './Services/Articles/article.service';
-import { ContentPageComponent } from './content-page/content-page.component';
-import { ItemComponent } from './item/item.component';
-import { AdminPanelComponent } from './admin-panel/admin-panel.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
-import { AdminSignInComponent } from './admin-sign-in/admin-sign-in.component';
-import { MatInputModule } from '@angular/material/input';
-import { AngularFireModule } from '@angular/fire';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+
+import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
+
+import { SliderComponent } from './main/slider/slider.component';
+import { NavComponent } from './main/nav/nav.component';
+import { FooterComponent } from './main/footer/footer.component';
+import { AboutComponent } from "./main/about/about.component";
+import { HomeComponent } from './main/home/home.component';
+import { ContentPageComponent } from './main/content-page/content-page.component';
+import { ItemComponent } from './main/item/item.component';
+import { SubscribeComponent } from './main/subscribe/subscribe.component';
+import { DialogUpdateComponent } from './main/MatDialog/dialog-update/dialog-update.component';
+import { DialogDeleleComponent } from './main/MatDialog/dialog-delele/dialog-delele.component';
+import { PageNotFoundComponent } from './main/page-not-found/page-not-found.component';
+
+import { ArticleService } from './Services/Articles/article.service';
+import { ImagesService } from './Services/images.service';
 import { AuthService } from './Services/Auth/auth.service';
-import { SubscribeComponent } from './subscribe/subscribe.component';
 import { SubscribeService } from './Services/Subscribe/subscribe.service';
-import { DialogUpdateComponent } from './MatDialog/dialog-update/dialog-update.component';
-import { DialogDeleleComponent } from './MatDialog/dialog-delele/dialog-delele.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AdminModule } from './main/admin/admin.module';
+
 
 @NgModule({
   declarations: [
@@ -50,8 +53,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HomeComponent,
     ContentPageComponent,
     ItemComponent,
-    AdminPanelComponent,
-    AdminSignInComponent,
     SubscribeComponent,
     DialogUpdateComponent,
     DialogDeleleComponent,
@@ -62,6 +63,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     FormsModule,
     AppRoutingModule,
     NgbModule,
+    AdminModule,
     BrowserAnimationsModule,
     MatSidenavModule,
     MatDialogModule,
@@ -74,6 +76,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MatListModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatMenuModule,
     AgmCoreModule.forRoot({
       apiKey: "AIzaSyBnhupVdK_Taq6alpihcms3mQAVYMTBNbE" 
     }),
@@ -84,7 +87,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ArticleService,
     AuthService,
     ReactiveFormsModule,
-    FormsModule,
     SubscribeService
   ],
   bootstrap: [AppComponent]

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MimeKit;
 using MailKit.Net.Smtp;
-using Microsoft.AspNetCore.Mvc;
 using NovodBlog.Models;
 
 namespace NovodBlog.Services
@@ -34,11 +32,10 @@ namespace NovodBlog.Services
 
         public async Task SendMessages(DB _db) // send message by gmail to client
         {
-            EmailService emailService = new EmailService();
             List<Subscribers> emailList = _db.Subscribers.Distinct().ToList();
             foreach (Subscribers tmp in emailList)
             {
-                await emailService.SendEmailAsync(tmp.email, "Novod blog News", $"<div>{tmp.name_of_subscriber}<br>Зайди на сайт там новинки<div>").ConfigureAwait(true);
+                await this.SendEmailAsync(tmp.email, "Novod blog News", $"<div>{tmp.name_of_subscriber}<br>Зайди на сайт там новинки<div>").ConfigureAwait(true);
             }
         }
 

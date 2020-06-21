@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+.container-fluid {
+  background-image: url("https://images.wallpaperscraft.ru/image/tekstura_poverhnost_temnyj_128260_3840x2400.jpg");
+
+
+  .content {
+    .SubscribeTitle {
+      font-size: 3rem;
+      color: white;
+      font-family: 'Merienda One', cursive;
+      text-shadow: 2px 2px #0041ba;
+    }
+
+    form {
+      min-width: 30%;
+      max-width: 1140px;
+    }
+
+    min-height: 30vh;
+  }
+}

@@ -13,6 +13,7 @@ namespace NovodBlog.Controllers
     [ApiController]
     public class ArticlesController : ControllerBase
     {
+        
         private readonly DB _db;
         private readonly EmailService _em;
         public ArticlesController(DB context,EmailService emailService)

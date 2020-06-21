@@ -1,0 +1,57 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport 
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]   =  "(isHandset$ | async) ? 'over' : 'side'"
+      position="end">
+    <mat-toolbar >Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink = "/home">Home page</a>
+      <a mat-list-item routerLink = "/content">Content page</a>
+      <a mat-list-item routerLink = "/about">About</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="UpNavBar ">
+    <div class="w-100 d-flex justify-content-between UpToolbar">
+      <div class="d-flex align-items-center p-1">
+        <img class="imgPhone" src="https://img.icons8.com/material/480/phone--v1.png" />
+        <span m-0>+380(93)-519-05-29</span>
+      </div>
+      <div class="d-flex p-2">
+        <ul class="p-1 list-inline" >
+          <li class="list-inline-item"><a class="icons"><img class="iconUptoolbar" src="https://cdn.onlinewebfonts.com/svg/img_80278.png" /></a></li>
+          <li class="list-inline-item"><a class="icons"><img class="iconUptoolbar" src="https://kiwiflowershop.com.ua/twitter.svg" /></a></li>
+        </ul>
+      </div>
+     </div>
+    <mat-toolbar class="border border-dark  w-100 p-3 Navbar border-right-0 border-left-0">
+      <div class="d-flex justify-content-between align-items-center Toolbar w-100">
+        <div>
+          <a routerLink="/home" class="h1 Title">Novod Blog</a>
+        </div>
+        <div class="d-flex  p-2" *ngIf="!(isHandset$ | async); else MenuForMobile">
+          <ul class="list-inline align-items-center m-0 ">
+            <li class="list-inline-item "><a class="Links" routerLink="">Home page</a></li>
+            <li class="list-inline-item "><a class="Links" routerLink="/content">Content page</a></li>
+            <li class="list-inline-item "><a class="Links" routerLink="/about">About</a></li>
+          </ul>
+        </div>
+        <ng-template #MenuForMobile >
+          <button type="button"
+                  aria-label="Toggle sidenav"
+                  mat-icon-button
+                  (click)="drawer.toggle()"
+                  *ngIf="isHandset$ | async">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </ng-template>
+      </div>
+      <button mat-icon-button *ngIf="auth.user$ | async " [matMenuTriggerFor]="menu"><mat-icon>more_vert</mat-icon></button>
+      <mat-menu #menu="matMenu" >
+        <button mat-menu-item routerLink="/adminPanel/AddingPanel">Adding panel</button>
+        <button mat-menu-item (click)="signOut()">Log out</button>
+      </mat-menu>
+    </mat-toolbar>
+    <ng-content></ng-content>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

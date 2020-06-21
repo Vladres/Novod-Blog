@@ -1,0 +1,29 @@
+.container-fluid {
+  margin: auto;
+  min-height: 30vh;
+  background-image: url("https://img5.goodfon.ru/wallpaper/nbig/d/19/wall-brick-colorful-paint-street-art-graffiti-wallpaper-4k-u.jpg");
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .Title {
+    font-size: 2.5rem;
+    font-family: 'Courgette', cursive;
+  }
+
+  .Blogs {
+    max-width: 1140px;
+
+    &:hover {
+      opacity: 0.8;
+      transition: 1s;
+    }
+  }
+
+  .MainBlogImage {
+    width: 100%;
+    height: 40vh;
+  }
+}

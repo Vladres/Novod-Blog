@@ -1,0 +1,75 @@
+<div class="Block d-flex flex-wrap flex-column   justify-content-between p-3">
+  <form [formGroup]="myForm" novalidate class=" p-3 shadow  bg-white rounded">
+    <div class="form-group">
+      <div class="alert alert-success" role="alert" *ngIf="done">
+        Успішно
+      </div>
+      <div class="alert alert-danger" role="alert" *ngIf="serverError">
+        {{serverError}}
+      </div>
+      <div>
+        <h1>Add article</h1>
+      </div>
+      <label>Title</label>
+      <input type="text" required class="form-control" name="" formControlName="Title" />
+      <div class="alert alert-danger"
+           *ngIf="myForm.controls['Title'].invalid && myForm.controls['Title'].touched">
+        Pls change TITLE before save!
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Text</label>
+      <textarea type="text" required class="form-control" formControlName="Text"></textarea>
+      <div class="alert alert-danger"
+           *ngIf="myForm.controls['Text'].invalid && myForm.controls['Text'].touched">
+        Pls change TEXT before save!
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Sub title</label>
+      <textarea type="text" required class="form-control" formControlName="subText"></textarea>
+      <div class="alert alert-danger"
+           *ngIf="myForm.controls['subText'].invalid && myForm.controls['subText'].touched">
+        Pls change subTitle before save!
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Image URL</label>
+      <input type="text" required class="form-control" formControlName="imgSource" />
+      <div class="alert alert-danger"
+           *ngIf="myForm.controls['imgSource'].invalid && myForm.controls['imgSource'].touched">
+        Pls change IMGSource before save!
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <button type="button" (click)="save()" class="btn btn-success">Save</button>
+    </div>
+  </form>
+  <div class="flex-fill p-2 w-100">
+    <p class="h2 text-center">Articles</p>
+    <div class="Blogs d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let article of articles">
+      <div class="flex-fill">
+        <p class="h3 Title">Title : {{article.title}}</p><br />
+        <p><span class="font-weight-bold">Subtext</span> : {{article.subText}}</p>
+        <p><span class="font-weight-bold">Text </span>: {{article.text}}</p>
+        <p><span class="font-weight-bold">Img source </span> : {{article.imgSource}}</p>
+        <div class="d-flex justify-content-between">
+          <button mat-raised-button (click)="openDialogCreate(article)" class="btn btn-success ">Update</button>
+          <button type="button" (click)="openDialogDelete(article.id)" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-fill p-2 w-100">
+    <p class="h2 text-center">Subscribers</p>
+    <div class="d-flex flex-column m-2 shadow p-3 mb-5 bg-white rounded" *ngFor="let subscriber of subscribers" >
+      <div class="flex-fill">
+        <p><span class="font-weight-bold">id : {{subscriber.id_subscriber}}</span></p>
+        <p><span class="font-weight-bold">name : {{subscriber.name_of_subscriber}}</span></p>
+        <p><span class="font-weight-bold">email : {{subscriber.email}}</span></p>
+        <button type="button" class="btn btn-danger" (click) ="deleteSubscriber(subscriber.id_subscriber)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+

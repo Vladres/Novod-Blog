@@ -13,8 +13,10 @@ using NovodBlog.Services;
 
 namespace NovodBlog
 {
+    
     public class Startup
     {
+       
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;

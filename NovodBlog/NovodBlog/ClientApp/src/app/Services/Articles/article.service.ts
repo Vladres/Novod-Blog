@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Article } from '../../Models/Article';
 
 @Injectable({
   providedIn: 'root'
@@ -31,19 +32,4 @@ export class ArticleService {
   deleteArticle(id: number): Observable<any> {
     return this.http.delete(this.url + "/" + id);
   }
-}
-
-export class Article{
-  id: number
-  title: string
-  subText: string
-  text: string
-  imgSource: string
-
-  constructor(
-    id: number,
-    title: string,
-    subText: string,
-    text: string,
-    imgSource: string) { }
 }
