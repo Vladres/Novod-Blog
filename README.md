@@ -16,9 +16,9 @@
 
 ## Screenshots
 
-![Image of main menu](https://i.ibb.co/dpyH0vk/photo5371104097299705392.jpg);
-![Image of main content](https://i.ibb.co/rpZnxvv/photo5371104097299705393.jpg);
-![Image of subscribe form](https://i.ibb.co/HCgY925/photo5371104097299705394.jpg);
+![Image of main menu](https://i.ibb.co/WBjtX72/photo5371104097299705392.jpg);
+![Image of main content](https://i.ibb.co/1dcdsNL/photo5371104097299705393.jpg);
+![Image of subscribe form](https://i.ibb.co/QKGMGcs/photo5371104097299705394.jpg);
 ![Image of admin sign in ](https://i.ibb.co/pdGncLf/photo5371104097299705398.jpg);
 ![Image of sidenav menu](https://i.ibb.co/1ngCsh0/photo5371104097299705396.jpg);
 ![Image of admin add panel](https://i.ibb.co/fG8tjyh/photo5371104097299705399.jpg);
